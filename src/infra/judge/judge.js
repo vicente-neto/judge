@@ -18,9 +18,6 @@ class Judge{
             throw new Error(this._sentences);
         }
     }
-    deliberate(value){
-        this._grade += value;
-    }
     deliberate(assertion,text,value){
         if(assertion){
             this._grade += value;
