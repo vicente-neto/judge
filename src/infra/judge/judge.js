@@ -80,7 +80,7 @@ class Judge{
             id: this._studentSubmission.courseWorkId
           }).then(courseWork=>{
               let text = "";
-              if(this._sentences){
+              if(this._sentences.length>0){
                 text = `A atividade ${courseWork.data.title} apresenta o(s) seguinte(s) problema(s):\n ${this._sentences}.
                 Pontuação obtida: ${this._grade}.`;
               }else{
