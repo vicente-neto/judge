@@ -1,5 +1,8 @@
-const GoogleApi = require('./src/infra/google-api');    
-GoogleApi.allCourses()
+const GoogleApi = require('./src/infra/google-api'); 
+var cron = require('node-cron');   
+
+cron.schedule('* * * * *', () => { 
+    GoogleApi.allCourses()
     .then(
         courses=>
         courses.forEach(
@@ -24,3 +27,4 @@ GoogleApi.allCourses()
         ))
     .then(()=>console.log("success"))
     .catch((rej)=>console.log(rej));
+});
