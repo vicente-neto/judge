@@ -13,11 +13,8 @@ class Judge{
         this._grade=0;
         this._sentences=[];
         this._studentSubmission = studentSubmission;
-
         if(!this._inquire()){
-            console.log(this._sentences);
             this.publish();
-            
             throw new Error(this._sentences);
         }
     };
@@ -33,12 +30,10 @@ class Judge{
         switch(this._studentSubmission.courseWorkType){
             case Judge.courseWorkType.ASSIGNMENT:
                 if(!this._hasAttachments()){
-                    console.log("não foi detectado anexo em sua resposta");
                     this.assert(false,"não foi detectado anexo em sua resposta",0);  
                     return false;
                 }
                 if(!this._allAreDriveFile()){
-                    console.log(JSON.stringify(this._studentSubmission.assignmentSubmission.attachments));
                     this.assert(false,"apenas arquivos do seu Drive são permitidos",0);
                     return false;    
                 }
@@ -63,7 +58,6 @@ class Judge{
         return  this._studentSubmission.assignmentSubmission.attachments.map(att=>att.driveFile.id);
     }
     outcome(){
-        console.log("grade:"+this._grade);
         Judge.classRoom.courses.courseWork.studentSubmissions.patch({
             // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
             courseId: this._studentSubmission.courseId,
@@ -77,7 +71,7 @@ class Judge{
                  "assignedGrade": this._grade,
                  "draftGrade": this._grade,
               }
-        }).then(res=>console.log("outcome sucess"));
+        }).then(res=>res);
         return this;
     }
     
@@ -97,8 +91,9 @@ class Judge{
               }else{
                 text = `Julgamento da atividade ${courseWork.data.title} concluido com sucesso!`;
               }
-              console.log(text);
-            /*Judge.classRoom.courses.announcements.create({
+              
+
+            Judge.classRoom.courses.announcements.create({
                 // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
                 courseId: this._studentSubmission.courseId,
                 requestBody: {
@@ -109,8 +104,12 @@ class Judge{
                      ,
                      "text": text,
                 },
-              }).then(res=>console.log("publish success"))*/}
-          );
+              }).then(
+                  res=>
+                    GoogleApi.studentByUserId(this._studentSubmission.courseId,this._studentSubmission.userId)
+                    .then(profile=>console.log(`corrected student(${profile.emailAddress}) submission`))
+                )
+            });
         return this;          
     }
 

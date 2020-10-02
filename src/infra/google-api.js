@@ -42,6 +42,16 @@ class GoogleApi {
                         studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')))
             .catch(rej=>[]);
     }  
+
+    static studentByUserId(courseId,userId){
+        return GoogleApi.getclassroom().courses.students.get({
+            courseId: courseId,
+            userId: userId
+          })
+            .then(  
+                res=>
+                res.data.profile)
+    }  
 }
 
 module.exports = GoogleApi;

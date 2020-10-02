@@ -4,9 +4,7 @@ const fs = require("fs");
 
 class DriveJudge extends Judge{
     static drive = GoogleApi.getdrive();
-    constructor(studentSubmission){
-        super(studentSubmission);
-    }
+
     get_fields(fields){
         return DriveJudge.drive.files.get({fileId:this.firstIdDriveFile(),fields:fields})
         .then(res=>res.data)

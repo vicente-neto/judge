@@ -1,9 +1,7 @@
 const DriveJudge = require('./driveJudge');
 
 class UploadFile extends DriveJudge{
-    constructor(studentSubmission){
-        super(studentSubmission);
-    }
+
     deliberate(){
         //Arquivo do Google Drive foi anexado corretamente.
         this.assert(true,"",50);
