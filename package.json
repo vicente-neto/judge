@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "consign": "^0.1.6",
+    "download-file": "^0.1.5",
     "express": "^4.17.1",
+    "extract-zip": "^2.0.1",
     "google-auth-library": "^6.0.6",
     "googleapis": "^59.0.0",
     "node-cron": "^2.0.3",

@@ -18,8 +18,12 @@ cron.schedule('* * * * *', () => {
                                 studentSubmissions=>   
                                 studentSubmissions.forEach(
                                     studentSubmission=>{
-                                    const judge = new Judge(studentSubmission);
-                                    judge.deliberate();
+                                        try {
+                                            const judge = new Judge(studentSubmission);                           
+                                            judge.deliberate();
+                                        } catch (error) {
+                                            console.log(error.toString());                                      
+                                        }  
                                 })
                             )
                         })

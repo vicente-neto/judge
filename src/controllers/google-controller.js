@@ -41,7 +41,7 @@ class GoogleController{
     createCourseWork() {
         return function(req, res) {
             GoogleApi.getclassroom().courses.courseWork.create(req.body)
-                    .then(coursework =>res.redirect(coursework))
+                    .then(coursework => res.status(201).json(coursework))
                     .catch(erro => console.log(erro));
         };
     }
@@ -54,6 +54,8 @@ class GoogleController{
                     courses.forEach(course =>{ 
                         GoogleApi.courseWorksByCourse(course.id,3).then(courseWorks=>{
                             courseWorks.forEach(courseWork=>{
+                                console.log(courseWork.title);
+                                console.log(courseWork.title.match(/\(python\)$/));
                                 const Judge = require("../infra/judge/"+courseWork.title);
                                 GoogleApi.studentSubmissionsByCourseWork(course.id,courseWork.id).then(studentSubmissions=>{    
                                     studentSubmissions.forEach(studentSubmission=>{
