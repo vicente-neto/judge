@@ -15,7 +15,7 @@ class Correct{
                                 let  judge;
                                 if(/(?<class>.*)\(python\)$/.test(courseWork.title)){
                                     let path = courseWork.title.match(/(?<path>.*)\(python\)$/).groups.path;    
-                                    let Judge = new require("./src/infra/judge/pythonjudge");
+                                    let Judge = new require("./src/infra/judge/pythonJudge");
                                     judge = new Judge(path);
                                 }else{
                                     let Judge = new require("./src/infra/judge/"+courseWork.title);
