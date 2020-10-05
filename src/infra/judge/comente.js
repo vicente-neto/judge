@@ -1,6 +1,6 @@
 const DriveJudge = require('./driveJudge');
 
-class Comment extends DriveJudge{
+class Comente extends DriveJudge{
     deliberate(){
         this.assert(true,"",50);
         this.get_comments()
@@ -9,4 +9,4 @@ class Comment extends DriveJudge{
     }    
 }
 
-module.exports = Comment;
+module.exports = Comente;

@@ -1,6 +1,6 @@
 const DriveJudge = require('./driveJudge');
 
-class UploadFile extends DriveJudge{
+class Upload extends DriveJudge{
 
     deliberate(){
         //Arquivo do Google Drive foi anexado corretamente.
@@ -12,4 +12,4 @@ class UploadFile extends DriveJudge{
     }    
 }
 
-module.exports = UploadFile;
+module.exports = Upload;

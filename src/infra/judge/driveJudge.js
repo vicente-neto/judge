@@ -27,6 +27,10 @@ class DriveJudge extends Judge{
         return DriveJudge.drive.files.get({fileId:this.firstIdDriveFile(),alt:"media"}).then((res)=>res.data);
     }  
 
+    get_revisions(){
+        return DriveJudge.drive.revisions.list({fileId:this.firstIdDriveFile()});
+    }
+
     
 }
 
