@@ -34,10 +34,14 @@ switch (params.shift()) {
     case "clone-topic-coursework":
         let courseSource = params.shift();
         let topic = params.shift();
+        console.log(topic);
         let coursesDestiny = params;
+
         coursesDestiny.forEach((course)=>{
+        
             GoogleApi.getclassroom().courses.courseWork.list({courseId:courseSource})
                 .then(courseworks => courseworks.data.courseWork.filter((coursework)=>coursework.topicId==topic).forEach(coursework => {
+                    
                     GoogleApi.getclassroom().courses.courseWork.create(
                         {
                             courseId:course,
