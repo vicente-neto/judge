@@ -19,7 +19,7 @@ class DriveJudge extends Judge{
 
     get_comments(){
         return DriveJudge.drive.comments.list({fileId:this.firstIdDriveFile(),fields:"*"})
-            .then(res=>{console.log(res);return res.data.comments})
+            .then(res=>{return res.data.comments})
             .catch(rej=>[]);
     }
 
