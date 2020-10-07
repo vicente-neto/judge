@@ -8,10 +8,22 @@ class GoogleApi {
     static getdrive(){
         return google.drive({version: "v3",auth:oAuth2Client});
     }
+
+    static getdriveactivity(){
+        return google.driveactivity({version: 'v2', auth:oAuth2Client});
+    }
+
+    
+
     static allCourses(){
         return GoogleApi.getclassroom().courses.list({
             courseStates: 'ACTIVE'
           }).then(res=>res.data.courses);
+    }
+    static getCourse(courseId){
+        return GoogleApi.getclassroom().courses.get({
+            id:courseId
+          }).then(res=>res.data);
     }
     static courseWorksByCourse(courseId,pageSize=0){
         let parameters = { 
@@ -28,7 +40,21 @@ class GoogleApi {
             .catch(rej=>[]);
         return promise;
     }
-    static studentSubmissionsByCourseWork(courseId,courseWorkId){
+
+    static getCourseWork(courseId,courseWorkId){
+        let parameters = { 
+            courseId: courseId,
+            id: courseWorkId
+        }
+        let promise = GoogleApi.getclassroom().courses.courseWork.get(parameters)
+            .then(  
+                res=>
+                res.data)
+            .catch(rej=>[]);
+        return promise;
+    }
+
+    static studentSubmissionsByCourseWork(courseId,courseWorkId,all=false){
         return GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list({
             courseId: courseId,
             courseWorkId: courseWorkId,
@@ -39,7 +65,9 @@ class GoogleApi {
                 res.data.studentSubmissions
                     .filter(
                         studentSubmission=>
-                        studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')))
+                        all||studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')
+                    )
+                )
             .catch(rej=>[]);
     }  
 

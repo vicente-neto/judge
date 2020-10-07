@@ -12,9 +12,7 @@ class DriveJudge extends Judge{
     }
 
     get_permissions(role="reader"){
-        return this.get_fields("permissions")
-            .then((permissions)=>permissions.filter((permission)=>permission.role=="reader"))
-            .catch(()=>[]);
+        return this.get_fields("permissions").then((fields)=>fields.permissions.filter((permission)=>permission.role==role)).catch((rej)=>[]);
     }
 
     get_comments(){

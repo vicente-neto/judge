@@ -14,7 +14,6 @@ class Judge{
         this._sentences=[];
         this._studentSubmission = studentSubmission;
         if(!this._inquire()){
-            this.publish();
             throw new Error(this._sentences);
         }
     };
@@ -57,25 +56,27 @@ class Judge{
     allIdDriveFile(){
         return  this._studentSubmission.assignmentSubmission.attachments.map(att=>att.driveFile.id);
     }
-    outcome(){
-        Judge.classRoom.courses.courseWork.studentSubmissions.patch({
-            // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
-            courseId: this._studentSubmission.courseId,
-            // Identifier of the course work.
-            courseWorkId: this._studentSubmission.courseWorkId,
-            // Identifier of the student .
-            id: this._studentSubmission.id,
-            // Mask that identifies which fields on the student submission to update. This field is required to do an update. The update fails if invalid fields are specified. The following fields may be specified by teachers: * `draft_grade` * `assigned_grade`
-            updateMask: 'assignedGrade,draftGrade',
-            requestBody: {
-                 "assignedGrade": this._grade,
-                 "draftGrade": this._grade,
-              }
-        }).then(res=>res);
+    outcome(patch){
+        if(patch){
+            Judge.classRoom.courses.courseWork.studentSubmissions.patch({
+                // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
+                courseId: this._studentSubmission.courseId,
+                // Identifier of the course work.
+                courseWorkId: this._studentSubmission.courseWorkId,
+                // Identifier of the student .
+                id: this._studentSubmission.id,
+                // Mask that identifies which fields on the student submission to update. This field is required to do an update. The update fails if invalid fields are specified. The following fields may be specified by teachers: * `draft_grade` * `assigned_grade`
+                updateMask: 'assignedGrade,draftGrade',
+                requestBody: {
+                    "assignedGrade": this._grade,
+                    "draftGrade": this._grade,
+                }
+            }).then(res=>res);
+        }
         return this;
     }
     
-    publish(){
+    publish(announcement){
         Judge.classRoom.courses.courseWork.get({
             // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
             courseId: this._studentSubmission.courseId,
@@ -91,24 +92,23 @@ class Judge{
               }else{
                 text = `Julgamento da atividade ${courseWork.data.title} concluido com sucesso!`;
               }
-              
-
-            Judge.classRoom.courses.announcements.create({
-                // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
-                courseId: this._studentSubmission.courseId,
-                requestBody: {
-                     "assigneeMode": "INDIVIDUAL_STUDENTS",
-                     "individualStudentsOptions": {"studentIds": [
-                        this._studentSubmission.userId
-                      ]}
-                     ,
-                     "text": text,
-                },
-              }).then(
-                  res=>
-                    GoogleApi.studentByUserId(this._studentSubmission.courseId,this._studentSubmission.userId)
-                    .then(profile=>console.log(`corrected student(${profile.emailAddress}) submission`))
-                )
+              GoogleApi.studentByUserId(this._studentSubmission.courseId,this._studentSubmission.userId)
+              .then(profile=>console.log(`corrected student(${profile.emailAddress}) submission by courseWork(${courseWork.data.title}. Grade:${this._grade})`));
+              if(announcement){
+                Judge.classRoom.courses.announcements.create({
+                    // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
+                    courseId: this._studentSubmission.courseId,
+                    requestBody: {
+                         "assigneeMode": "INDIVIDUAL_STUDENTS",
+                         "individualStudentsOptions": {"studentIds": [
+                            this._studentSubmission.userId
+                          ]}
+                         ,
+                         "text": text,
+                    },
+                  }).catch((rej)=>console.log(rej));
+              }
+            
             });
         return this;          
     }

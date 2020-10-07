@@ -55,7 +55,6 @@ class PythonJudge extends DriveJudge{
                 }
             }
             this.assert(testFault==0,`${testFault}% dos testes falharam`,0);
-            this.outcome().publish();
         });
         
     }
