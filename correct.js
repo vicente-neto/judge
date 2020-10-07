@@ -21,7 +21,7 @@ class Correct{
                                 }else{
                                     Judge = new require("./src/infra/judge/"+courseWork.title);
                                 }
-                            GoogleApi.studentSubmissionsByCourseWork(course.id,courseWork.id)
+                            GoogleApi.studentSubmissionsByCourseWork(course.id,courseWork.id,false)
                                 .then(
                                     studentSubmissions=>   
                                     studentSubmissions.forEach(
@@ -34,9 +34,11 @@ class Correct{
                                                     judge = new Judge();
                                                 }
                                                 judge.init(studentSubmission);                 
-                                                judge.deliberate();
-                                                judge.outcome(true);
-                                                judge.publish(true); 
+                                                judge.deliberate().then(()=>{
+                                                    judge.outcome(true);
+                                                    judge.publish(true); 
+                                                });
+                                                
                                             } catch (error) {
                                                 console.log(error.toString());                                      
                                             }     

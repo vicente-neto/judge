@@ -7,7 +7,7 @@ class Lixeira extends Judge{
         let params = {
             "itemName":"items/"+this.firstIdDriveFile()
           };
-        service.activity.query({requestBody: params}).
+          return service.activity.query({requestBody: params}).
             then(res=>{
                 //console.log(res.data.activities);
                 this.assert(res.data.activities.some((activity)=>activity.primaryActionDetail.hasOwnProperty("restore")),"documento deve ir para lixeira e depois restaurado",100)
