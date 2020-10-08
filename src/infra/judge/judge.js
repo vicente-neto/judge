@@ -57,9 +57,7 @@ class Judge{
         return  this._studentSubmission.assignmentSubmission.attachments.map(att=>att.driveFile.id);
     }
     outcome(patch){
-        console.log(this._grade);
         if(patch){
-            console.log(this._grade);
             Judge.classRoom.courses.courseWork.studentSubmissions.patch({
                 // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
                 courseId: this._studentSubmission.courseId,
@@ -73,7 +71,7 @@ class Judge{
                     "assignedGrade": this._grade,
                     "draftGrade": this._grade,
                 }
-            }).then(res=>console.log(res));
+            }).then(res=>{});
         }
         return this;
     }

@@ -22,7 +22,7 @@ switch (params.shift()) {
                 .then(coursework => console.log(coursework))
                 .catch(erro => console.log(erro));
         break;
-    case "list-courseWork":
+    case "list-courseworks":
         GoogleApi.getclassroom().courses.courseWork.list(
             {
                 courseId:params.shift()

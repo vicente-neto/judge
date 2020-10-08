@@ -79,8 +79,8 @@ class Correct{
                                     }
                                    judge.init(studentSubmission);         
                                    judge.deliberate();
-                                   judge.outcome(true);
-                                   judge.publish(true);   
+                                   judge.outcome(false);
+                                   judge.publish(false);   
                                 } catch (error) {
                                     console.log(error.toString());                                      
                                 }     
