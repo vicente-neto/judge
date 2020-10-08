@@ -57,6 +57,8 @@ class Judge{
         return  this._studentSubmission.assignmentSubmission.attachments.map(att=>att.driveFile.id);
     }
     outcome(patch){
+
+
         if(patch){
             Judge.classRoom.courses.courseWork.studentSubmissions.patch({
                 // Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.
@@ -71,7 +73,7 @@ class Judge{
                     "assignedGrade": this._grade,
                     "draftGrade": this._grade,
                 }
-            }).then(res=>{});
+            }).then(res=>{console.log(res)}).catch((rej)=>console.log(rej));
         }
         return this;
     }
@@ -92,6 +94,7 @@ class Judge{
               }else{
                 text = `Julgamento da atividade ${courseWork.data.title} concluido com sucesso!`;
               }
+              console.log(text);
               GoogleApi.studentByUserId(this._studentSubmission.courseId,this._studentSubmission.userId)
               .then(profile=>console.log(`corrected student(${profile.emailAddress}) submission by courseWork(${courseWork.data.title}. Grade:${this._grade})`));
               if(announcement){

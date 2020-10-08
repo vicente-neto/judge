@@ -77,10 +77,11 @@ class Correct{
                                     }else{
                                         judge = new Judge();
                                     }
-                                   judge.init(studentSubmission);         
-                                   judge.deliberate();
-                                   judge.outcome(false);
-                                   judge.publish(false);   
+                                    judge.init(studentSubmission);                 
+                                    judge.deliberate().then(()=>{
+                                        judge.outcome(true);
+                                        judge.publish(false); 
+                                    });  
                                 } catch (error) {
                                     console.log(error.toString());                                      
                                 }     
