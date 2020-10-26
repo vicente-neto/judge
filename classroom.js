@@ -8,6 +8,9 @@ switch (params.shift()) {
             console.log(`${course.id}:${course.name}`);
         }));
         break;
+    case "show-course":
+        GoogleApi.getCourse(params.shift()).then((course)=>console.log(course));
+        break;
     case "add-coursework":
         GoogleApi.getclassroom().courses.courseWork.create(
             {

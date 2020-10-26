@@ -79,7 +79,7 @@ class Correct{
                                     }
                                     judge.init(studentSubmission);                 
                                     judge.deliberate().then(()=>{
-                                        judge.outcome(true);
+                                        judge.outcome(false);
                                         judge.publish(false); 
                                     });  
                                 } catch (error) {

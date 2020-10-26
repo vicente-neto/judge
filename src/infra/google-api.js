@@ -9,6 +9,18 @@ class GoogleApi {
         return google.drive({version: "v3",auth:oAuth2Client});
     }
 
+    static getsheets(){
+        return google.sheets({version: "v4",auth:oAuth2Client});
+    }
+
+    static getslides(){
+        return google.slides({version: "v1",auth:oAuth2Client});
+    }
+
+    static getadmin(){
+        return google.admin({version: 'reports_v1',auth:oAuth2Client});
+    }
+
     static getdriveactivity(){
         return google.driveactivity({version: 'v2', auth:oAuth2Client});
     }
