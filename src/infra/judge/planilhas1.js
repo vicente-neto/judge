@@ -15,7 +15,7 @@ class Planilhas1 extends DriveJudge{
                 propertie = res.data.sheets[0].data[0].columnMetadata.find(p=>p.hasOwnProperty("pixelSize")).pixelSize;
                 this.assert(propertie==200,"colunas devem ter 200 pixel",10);
                 propertie = res.data.properties.title;
-                this.assert(propertie=="Compartilhamento","título deve ser 'Compartilhamento'",20);
+                this.assert(/Compartilhamento/i.test(propertie),"título deve ser 'Compartilhamento'",20);
                 propertie = res.data.sheets[0].data[0].rowData[0].values[0].userEnteredFormat.horizontalAlignment;
                 this.assert(propertie=="CENTER","células devem ter texto centralizado",20);
                 propertie = res.data.sheets[0].data[1].rowData[0].values[0].formattedValue;

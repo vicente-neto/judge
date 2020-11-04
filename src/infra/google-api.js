@@ -25,7 +25,54 @@ class GoogleApi {
         return google.driveactivity({version: 'v2', auth:oAuth2Client});
     }
 
+    static batchUpdateSheet(id,ranges){
+        return GoogleApi.getsheets().spreadsheets.values.batchUpdate({
+            spreadsheetId: id,  
+            requestBody:{
+                "valueInputOption":'USER_ENTERED',
+                "data":ranges
+              }
+        })
+        .then(()=>true)
+        .catch(()=>false);
+    }
+
+    static getCellSheet(id,range){
+            return GoogleApi.getsheets().spreadsheets.get(
+                {
+                    spreadsheetId:id,
+                    includeGridData: true,
+                    ranges:range
+                }
+            )
+            .then((sheet)=>sheet.data.sheets[0].data[0].rowData[0].values[0].formattedValue)
+            .catch(()=>undefined);
+    }
+
     
+    static batchGetSheet(id,ranges){
+        return GoogleApi.getsheets().spreadsheets.values.batchGet(
+            {
+                spreadsheetId: id, 
+                majorDimension: "ROWS", 
+                ranges:ranges
+            }
+        )
+        .then((res)=>res.data)
+        .catch(()=>undefined);
+    }
+
+    static getValuesSheet(id,range){
+        return GoogleApi.getsheets().spreadsheets.get(
+            {
+                spreadsheetId:id,
+                includeGridData: true,
+                ranges:range
+            }
+        )
+        .then((sheet)=>sheet.data.sheets[0].data.map((data)=>data.rowData[0].values[0].formattedValue))
+        .catch(()=>undefined);
+}
 
     static allCourses(){
         return GoogleApi.getclassroom().courses.list({
