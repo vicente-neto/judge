@@ -54,18 +54,7 @@ switch (params.shift()) {
                                 "title": coursework.title,
                                 "workType": "ASSIGNMENT",
                                 "materials": coursework.materials,
-                                "maxPoints": coursework.maxPoints,
-                                "dueDate":{
-                                    "year": 2020,
-                                    "month": 11,
-                                    "day": 1
-                                  },
-                                 dueTime: {
-                                    "hours": 23,
-                                    "minutes": 59,
-                                    "seconds": 59,
-                                    "nanos": 0
-                                  }
+                                "maxPoints": coursework.maxPoints
 
                             }
                         })

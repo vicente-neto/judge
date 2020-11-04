@@ -49,6 +49,30 @@ class GoogleApi {
             .catch(()=>undefined);
     }
 
+    static cells(id,range){
+        return GoogleApi.getsheets().spreadsheets.get(
+            {
+                spreadsheetId:id,
+                includeGridData: true,
+                ranges:range
+            }
+        )
+        .then((res)=>{
+            let formulas = [];
+            res.data.sheets.forEach((sheet)=>
+                sheet.data.forEach((data)=>
+                    data.rowData.forEach((row)=>
+                        row.values.forEach((value)=>
+                            formulas.push(value)
+                        )
+                    )
+                )
+            );
+            return formulas
+        })
+        .catch(()=>undefined);
+}
+
     
     static batchGetSheet(id,ranges){
         return GoogleApi.getsheets().spreadsheets.values.batchGet(
