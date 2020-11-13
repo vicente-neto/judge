@@ -37,6 +37,19 @@ class GoogleApi {
         .catch(()=>false);
     }
 
+    static getPropertiesSheet(id,range){
+        return GoogleApi.getsheets().spreadsheets.get(
+            {
+                spreadsheetId:id,
+                ranges:range,
+                includeGridData:true
+            }
+        )
+        .then((sheet)=>sheet)
+        .catch(()=>undefined);
+}
+    
+
     static getCellSheet(id,range){
             return GoogleApi.getsheets().spreadsheets.get(
                 {
@@ -86,6 +99,8 @@ class GoogleApi {
         .catch(()=>undefined);
     }
 
+  
+
     static getValuesSheet(id,range){
         return GoogleApi.getsheets().spreadsheets.get(
             {
@@ -115,11 +130,17 @@ class GoogleApi {
         }
         let promise = GoogleApi.getclassroom().courses.courseWork.list(parameters)
             .then(  
-                res=>
-                res.data.courseWork.filter(
-                    courseWork=>
-                    courseWork.hasOwnProperty("associatedWithDeveloper")
-                    ))
+                res=>{
+                    if(res.data.courseWork){
+                        return res.data.courseWork.filter(
+                            courseWork=>
+                            courseWork.hasOwnProperty("associatedWithDeveloper")
+                            )
+                    }
+                    else{
+                        return [];
+                    }
+                })
             .catch(rej=>[]);
         return promise;
     }

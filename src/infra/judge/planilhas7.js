@@ -57,7 +57,7 @@ class Planilhas7 extends DriveJudge{
             ]
         );
 
-        
+        console.log([k12,o4,o5,o6,o7]);
         let regexp = new RegExp(/75,60/,"i");
         this.assert(regexp.test(k12),"problema na tabela",20);
         regexp = new RegExp(/75,60/,"i");

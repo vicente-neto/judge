@@ -20,8 +20,10 @@ class Judge{
     assert(assertion,text,value){
         if(assertion){
             this._grade += value;
+            return true;
         }else{
             this._sentences.push(text);
+            return false;
         }
     }
 
@@ -48,13 +50,24 @@ class Judge{
         return this._studentSubmission.assignmentSubmission.attachments instanceof Array
     }
     _allAreDriveFile(){
-        return !this._studentSubmission.assignmentSubmission.attachments.some(att=>!(att.hasOwnProperty('driveFile')));
+        return !this._studentSubmission.assignmentSubmission.attachments.some(att=>!(att.hasOwnProperty('driveFile')||att.hasOwnProperty('form')));
     }
     firstIdDriveFile(){
         return  this._studentSubmission.assignmentSubmission.attachments[0].driveFile.id;
     }
     allIdDriveFile(){
-        return  this._studentSubmission.assignmentSubmission.attachments.map(att=>att.driveFile.id);
+        return  this._studentSubmission.assignmentSubmission.attachments;
+    }
+    async allSpreadsheets(){
+        let spreadsheets = [];
+        let attachements = this._studentSubmission.assignmentSubmission.attachments.filter((att)=>att.hasOwnProperty("driveFile"));
+        for(let i=0;i<attachements.length;i++){
+            let spreadsheet = await GoogleApi.getdrive().files.get({fileId:attachements[i].driveFile.id,fields:"mimeType"}).then(ss=>ss.data.mimeType); 
+            spreadsheets.push(spreadsheet);
+        }
+       
+        return spreadsheets;
+
     }
     outcome(patch){
 
@@ -73,7 +86,7 @@ class Judge{
                     "assignedGrade": this._grade,
                     "draftGrade": this._grade,
                 }
-            }).then(res=>{console.log(res)}).catch((rej)=>console.log(rej));
+            }).then(res=>{console.log(`nota atribuida`)}).catch((rej)=>console.log(rej));
         }
         return this;
     }

@@ -8,6 +8,11 @@ switch (params.shift()) {
             console.log(`${course.id}:${course.name}`);
         }));
         break;
+    case "emails":
+        GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
+            console.log(`${course.courseGroupEmail}`);
+        }));
+        break;
     case "show-course":
         GoogleApi.getCourse(params.shift()).then((course)=>console.log(course));
         break;
@@ -63,6 +68,36 @@ switch (params.shift()) {
                 }));
         });
         break;
+    case "update-courseworks":
+        let title = params.shift();
+        let description = params.shift();
+        let er = new RegExp(title,"i");
+    GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
+   
+        GoogleApi.courseWorksByCourse(course.id)
+                .then(courseworks => {
+                   
+                  
+                        
+                        courseworks.filter((coursework)=>er.test(coursework.title)).forEach(coursework => {
+                            GoogleApi.getclassroom().courses.courseWork.patch(
+                                {
+                                    courseId:course.id,
+                                    id:coursework.id,
+                                    updateMask:"description",
+                                    requestBody: {
+                                        "description": description
+                                    }
+                                })
+                                    .then(coursework => console.log("coursework atualizado"))
+                                    .catch(erro => console.log(erro));
+                            
+                        })
+                    
+                    
+            });
+    }));
+    break;
     case "get-coursework":
         GoogleApi.getclassroom().courses.courseWork.get(
             {
