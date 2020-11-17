@@ -61,21 +61,21 @@ class Planilhas6 extends DriveJudge{
                 ]
             );
         } catch (error) {
-
+            console.log(error);
             this.assert(false,"verifique se existe a página 'vendas de combos'",0);
             return;
         }
 
        
         try {
-            data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
                 `'vendas de combos'!D16`
             ]);
             [aviso] = data.valueRanges.map((range)=>range.values[0][0]);      
 
         } catch (error) {
-
-            this.assert(false,"verifique se existe a página 'vendas de combos'",0);
+            console.log(error);
+            this.assert(false,"verifique a existência a página 'vendas de combos'",0);
             return;
         }
               
