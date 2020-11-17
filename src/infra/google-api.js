@@ -145,6 +145,35 @@ class GoogleApi {
         return promise;
     }
 
+
+    static studentsByCourse(courseId,pageToken=undefined){
+
+        let parameters = { 
+            courseId: courseId
+        }
+        if(pageToken){
+            parameters.pageToken = pageToken;
+        }
+        let promise = GoogleApi.getclassroom().courses.students.list(parameters)
+            .then(  
+                async res=>{
+                    let students = [];
+                    if(res.data.nextPageToken){
+                        let stu = await GoogleApi.studentsByCourse(courseId,res.data.nextPageToken);
+                        students = students.concat(stu); 
+                        
+                    }
+
+                    return students.concat(res.data.students.map(student=>{
+                        
+                        return courseId+","+student.profile.id+","+student.profile.name.fullName+","+student.profile.emailAddress;
+                    }));
+                    
+                })
+            .catch(rej=>[rej]);
+        return promise;
+    }
+
     static getCourseWork(courseId,courseWorkId){
         let parameters = { 
             courseId: courseId,
@@ -176,6 +205,26 @@ class GoogleApi {
     }  
 
 
+    static studentGradeByCourseWork(courseId,courseWorkId,all=false){
+        return GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list({
+            courseId: courseId,
+            courseWorkId: courseWorkId,
+            states: 'TURNED_IN'
+          })
+            .then(  
+                res=>
+                res.data.studentSubmissions
+                    .filter(
+                        studentSubmission=>
+                        all||studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')
+                    ).map(studentSubmission=>{
+                        return studentSubmission;
+                    })
+                )
+            .catch(rej=>[]);
+    }  
+
+
 
     static studentByUserId(courseId,userId){
         return GoogleApi.getclassroom().courses.students.get({
@@ -186,6 +235,18 @@ class GoogleApi {
                 res=>
                 res.data.profile)
     }  
+
+
+    static studentByCourse(courseId){
+        return GoogleApi.getclassroom().courses.students.list({
+            courseId: courseId,
+            pageSize: 5
+          })
+            .then(  
+                res=>
+                res)
+    } 
+
 }
 
 module.exports = GoogleApi;

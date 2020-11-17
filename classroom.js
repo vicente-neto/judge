@@ -1,11 +1,12 @@
 const GoogleApi = require('./src/infra/google-api');
+const fs = require('fs');
 
 let params = process.argv.splice(2);
 
 switch (params.shift()) {
     case "list-courses":
         GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
-            console.log(`${course.id}:${course.name}`);
+            console.log(`${course.id},${course.name}`);
         }));
         break;
     case "emails":
@@ -15,6 +16,31 @@ switch (params.shift()) {
         break;
     case "show-course":
         GoogleApi.getCourse(params.shift()).then((course)=>console.log(course));
+        break;
+    case "show-students":
+        GoogleApi.allCourses().then(courses=>{
+            courses.forEach(course=>{
+                console.log(course.id);
+                GoogleApi.studentsByCourse(course.id).then(res=>
+                    res.forEach(e=>
+                        fs.appendFile('alunos.txt', e+"\n", function (err) {
+                            if (err) throw err;
+                            
+                          }) 
+                    )   
+                );
+
+            });
+            
+            
+        });
+       
+        break;
+    case "show-students2":
+        GoogleApi.studentsByCourse(params[0]).then(res=>
+            console.log(res)
+        );
+       
         break;
     case "add-coursework":
         GoogleApi.getclassroom().courses.courseWork.create(
@@ -36,8 +62,11 @@ switch (params.shift()) {
                 courseId:params.shift()
             })
                 .then(courseworks => courseworks.data.courseWork.filter((coursework)=>true).forEach(coursework => {
-                    console.log(`${coursework.id}:${coursework.title} - topicId:${coursework.topicId}`);
+                    console.log(`${coursework.courseId},${coursework.id},${coursework.title}, - topicId:${coursework.topicId}`);
                 }));
+        break;
+    case "list-students":
+        GoogleApi.studentsByCourse(params.shift()).then(res=>console.log(res));
         break;
     case "clone-topic-coursework":
         let courseSource = params.shift();
@@ -98,6 +127,46 @@ switch (params.shift()) {
             });
     }));
     break;
+
+
+    case "grade-courseworks":
+
+    GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
+   
+        GoogleApi.courseWorksByCourse(course.id)
+                .then(courseworks => {
+                   
+                  
+                        
+                        courseworks.forEach(coursework => {
+                            GoogleApi.studentGradeByCourseWork(course.id,coursework.id,true).then(courseworks=>courseworks.forEach(coursework=>
+                               // console.log(res.courseId+","+res.courseWorkId+","+res.userId+","+res.assignedGrade);
+                                fs.appendFile('alunos.txt', coursework.courseId+","+coursework.courseWorkId+","+coursework.userId+","+coursework.assignedGrade+"\n", function (err) {
+                                    if (err) throw err; 
+                                    
+                                  })
+
+
+                            ));
+                            
+                        })
+                    
+                    
+            });
+    }));
+    break;
+
+
+
+
+
+
+
+
+
+
+
+
     case "get-coursework":
         GoogleApi.getclassroom().courses.courseWork.get(
             {

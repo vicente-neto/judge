@@ -4,31 +4,49 @@ const GoogleApi = require('../google-api');
 class Planilhas4 extends DriveJudge{
     async deliberate(){
         let line = Math.floor((Math.random() * 100) + 1);
+        let name;
+        let c2,c5,ocorrencias,c8;
+        try {
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[`grupos!A${line}`]);
+            name = data.valueRanges[0].values[0][0];
+        } catch (error) {
 
-        let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[`grupos!A${line}`]);
-        let name = data.valueRanges[0].values[0][0];
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "pesquisa!A2",
-                    "majorDimension": "ROWS",
-                    "values": [ [line] ]
-                },
-                {
-                    "range": "pesquisa!B5",
-                    "majorDimension": "ROWS",
-                    "values": [ [name] ]
-                },
-                {
-                    "range": "pesquisa!B8",
-                    "majorDimension": "ROWS",
-                    "values": [ [name] ]
-                }
-            ]
-        );
+            this.assert(false,"verifique se existe a página 'grupos'",0);
+            return;
+        }
 
-        data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
+        try {
+
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "pesquisa!A2",
+                        "majorDimension": "ROWS",
+                        "values": [ [line] ]
+                    },
+                    {
+                        "range": "pesquisa!B5",
+                        "majorDimension": "ROWS",
+                        "values": [ [name] ]
+                    },
+                    {
+                        "range": "pesquisa!B8",
+                        "majorDimension": "ROWS",
+                        "values": [ [name] ]
+                    }
+                ]
+            );
+    
+
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'pesquisa'",0);
+            return;
+        }
+
+        try {
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
             [
                 "pesquisa!C2",
                 "pesquisa!C5",
@@ -37,7 +55,19 @@ class Planilhas4 extends DriveJudge{
             ]
         );
 
-        let [c2,c5,ocorrencias,c8] = data.valueRanges.map((range)=>range.values[0][0]); 
+        [c2,c5,ocorrencias,c8] = data.valueRanges.map((range)=>range.values[0][0]); 
+        
+    
+
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'pesquisa' e 'grupos'",0);
+            return;
+        }
+
+       
+
+ 
 
         let regexp = new RegExp(name,"i");
         this.assert(regexp.test(c2),"problema na pesquisa por linha/coluna",25);
@@ -48,24 +78,35 @@ class Planilhas4 extends DriveJudge{
         regexp = new RegExp(ocorrencias,"i");
         this.assert(regexp.test(c8),"problema na pesquisa de ocorrências",25);
 
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "pesquisa!B8",
-                    "majorDimension": "ROWS",
-                    "values": [ [line] ]
-                }
-            ]
-        );
 
-        data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
-            [
-                "pesquisa!C8"
-            ]
-        );
 
-        [c8] = data.valueRanges.map((range)=>range.values[0][0]); 
+        try {
+  
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "pesquisa!B8",
+                        "majorDimension": "ROWS",
+                        "values": [ [line] ]
+                    }
+                ]
+            );
+    
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
+                [
+                    "pesquisa!C8"
+                ]
+            );
+    
+            [c8] = data.valueRanges.map((range)=>range.values[0][0]); 
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'pesquisa'",0);
+            return;
+        }
+
+   
 
         this.assert(/NOME INEXISTENTE/i.test(c8),"problema na pesquisa por dados inexistentes",25);
     }    

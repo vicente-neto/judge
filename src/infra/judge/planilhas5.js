@@ -4,25 +4,44 @@ const GoogleApi = require('../google-api');
 class Planilhas5 extends DriveJudge{
     async deliberate(){
         let quantidade = Math.floor((Math.random() * 100) + 1);
+        let g4,d16,g7,g13;
 
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "'vendas de combos'!C2",
-                    "majorDimension": "ROWS",
-                    "values": [ [quantidade] ]
-                }
-            ]
-        );
+        try {
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "'vendas de combos'!C2",
+                        "majorDimension": "ROWS",
+                        "values": [ [quantidade] ]
+                    }
+                ]
+            );
 
-        let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
-            `'vendas de combos'!G4`,
-            `'vendas de combos'!D16`,
-            `'vendas de combos'!G7`,
-            `'vendas de combos'!G13`
-        ]);
-        let [g4,d16,g7,g13] = data.valueRanges.map((range)=>range.values[0][0]); 
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'vendas de combos'",0);
+            return;
+        }
+
+        try {
+  
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
+                `'vendas de combos'!G4`,
+                `'vendas de combos'!D16`,
+                `'vendas de combos'!G7`,
+                `'vendas de combos'!G13`
+            ]);
+            [g4,d16,g7,g13] = data.valueRanges.map((range)=>range.values[0][0]); 
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'vendas de combos'",0);
+            return;
+        }
+
+
+
+
 
         let regexp = new RegExp(quantidade,"i");
         this.assert(regexp.test(g4),"problema na pesquisa de quantidade",25);

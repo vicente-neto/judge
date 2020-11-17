@@ -14,6 +14,8 @@ class Judge{
         this._sentences=[];
         this._studentSubmission = studentSubmission;
         if(!this._inquire()){
+            this.outcome(true);
+            this.publish(true); 
             throw new Error(this._sentences);
         }
     };

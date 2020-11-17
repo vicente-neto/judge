@@ -5,59 +5,72 @@ class Planilhas7 extends DriveJudge{
     async deliberate(){
         let novoCombo = Math.floor((Math.random() * 10) + 10);
         let novaQuantidade = Math.floor((Math.random() * 10) + 1);
+        let k12,o4,o5,o6,o7;
 
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "'tabela'!A12",
-                    "majorDimension": "ROWS",
-                    "values": [ [600] ]
-                },                {
-                    "range": "'tabela'!o2",
-                    "majorDimension": "ROWS",
-                    "values": [ [11] ]
-                },                {
-                    "range": "'tabela'!o3",
-                    "majorDimension": "ROWS",
-                    "values": [ [600] ]
-                }
-            ]
-        );
+        try {
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "'tabela'!A12",
+                        "majorDimension": "ROWS",
+                        "values": [ [600] ]
+                    },                {
+                        "range": "'tabela'!o2",
+                        "majorDimension": "ROWS",
+                        "values": [ [11] ]
+                    },                {
+                        "range": "'tabela'!o3",
+                        "majorDimension": "ROWS",
+                        "values": [ [600] ]
+                    }
+                ]
+            );
+        } catch (error) {
+            this.assert(false,"dados da página tabela não acessados",0);
+            return;   
+        }
+                
+        try {
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
+                "'tabela'!K12",
+                "'tabela'!o4",
+                "'tabela'!o5",
+                "'tabela'!o6",
+                "'tabela'!o7"
+            ]);
+           
+            [k12,o4,o5,o6,o7] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:"");  
+        } catch (error) {
 
-        let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
-            "'tabela'!K12",
-            "'tabela'!o4",
-            "'tabela'!o5",
-            "'tabela'!o6",
-            "'tabela'!o7"
-        ]);
-        
-
+            this.assert(false,"não foi possível acessar algumas células da página tabela para verificação",0);
+            return;
+        }
       
-        let [k12,o4,o5,o6,o7] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:""); 
+     
+        try {
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "'tabela'!A12",
+                        "majorDimension": "ROWS",
+                        "values": [ [500] ]
+                    },                {
+                        "range": "'tabela'!o2",
+                        "majorDimension": "ROWS",
+                        "values": [ [2] ]
+                    },                {
+                        "range": "'tabela'!o3",
+                        "majorDimension": "ROWS",
+                        "values": [ [50] ]
+                    }
+                ]
+            );
+        } catch (error) {
+            this.assert(false,"não foi possível retornar os dados originais da planilha",0);
+        }
         
-        
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "'tabela'!A12",
-                    "majorDimension": "ROWS",
-                    "values": [ [500] ]
-                },                {
-                    "range": "'tabela'!o2",
-                    "majorDimension": "ROWS",
-                    "values": [ [2] ]
-                },                {
-                    "range": "'tabela'!o3",
-                    "majorDimension": "ROWS",
-                    "values": [ [50] ]
-                }
-            ]
-        );
-
-        console.log([k12,o4,o5,o6,o7]);
         let regexp = new RegExp(/75,60/,"i");
         this.assert(regexp.test(k12),"problema na tabela",20);
         regexp = new RegExp(/75,60/,"i");

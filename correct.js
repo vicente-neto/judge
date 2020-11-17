@@ -47,7 +47,7 @@ class Correct{
                                         )
                                     
                                 } catch (error) {
-                                    console.log(`${courseWork.title} sem juiz!`);
+                                    console.log(`${course.name}:${courseWork.title} sem juiz!`);
                                 }
                                
 

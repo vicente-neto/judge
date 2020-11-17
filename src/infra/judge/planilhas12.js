@@ -3,62 +3,90 @@ const GoogleApi = require('../google-api');
 
 class Planilhas12 extends DriveJudge{
     async deliberate(){
+        let b2,b3,b4,b5,b6;
+                     
+        try {
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "'América do Sul'!D2",
+                        "majorDimension": "ROWS",
+                        "values": [ [1001] ]
+                    }, 
+                    {
+                        "range": "'América do Sul'!F11",
+                        "majorDimension": "ROWS",
+                        "values": [ [1] ]
+                    },
+                    {
+                        "range": "'América do Sul'!D11",
+                        "majorDimension": "ROWS",
+                        "values": [ [100000] ]
+                    }
+                ]
+            );
+        } catch (error) {
 
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "'América do Sul'!D2",
-                    "majorDimension": "ROWS",
-                    "values": [ [1001] ]
-                }, 
-                {
-                    "range": "'América do Sul'!F11",
-                    "majorDimension": "ROWS",
-                    "values": [ [1] ]
-                },
-                {
-                    "range": "'América do Sul'!D11",
-                    "majorDimension": "ROWS",
-                    "values": [ [100000] ]
-                }
-            ]
-        );
+            this.assert(false,"verifique se existe a página 'América do Sul'",0);
+            return;
+        }
 
-        let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
-            "'perguntas'!B2",
-            "'perguntas'!B3",
-            "'perguntas'!B4",
-            "'perguntas'!B5",
-            "'perguntas'!B6"
-        ]);
 
-        await GoogleApi.batchUpdateSheet(
-            this.firstIdDriveFile(),
-            [
-                {
-                    "range": "'América do Sul'!D2",
-                    "majorDimension": "ROWS",
-                    "values": [ [0] ]
-                }, 
-                {
-                    "range": "'América do Sul'!F11",
-                    "majorDimension": "ROWS",
-                    "values": [ [0] ]
-                },
-                {
-                    "range": "'América do Sul'!D11",
-                    "majorDimension": "ROWS",
-                    "values": [ [5] ]
-                }
-            ]
-        );
+
+        try {
+
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),[
+                "'perguntas'!B2",
+                "'perguntas'!B3",
+                "'perguntas'!B4",
+                "'perguntas'!B5",
+                "'perguntas'!B6"
+            ]);
+
+            [b2,b3,b4,b5,b6] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:""); 
+        
+          
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'perguntas'",0);
+            return;
+        }
+
+  
+
+
+        try {
+            await GoogleApi.batchUpdateSheet(
+                this.firstIdDriveFile(),
+                [
+                    {
+                        "range": "'América do Sul'!D2",
+                        "majorDimension": "ROWS",
+                        "values": [ [0] ]
+                    }, 
+                    {
+                        "range": "'América do Sul'!F11",
+                        "majorDimension": "ROWS",
+                        "values": [ [0] ]
+                    },
+                    {
+                        "range": "'América do Sul'!D11",
+                        "majorDimension": "ROWS",
+                        "values": [ [5] ]
+                    }
+                ]
+            );
+        } catch (error) {
+
+            this.assert(false,"verifique se existe a página 'América do Sul'",0);
+            return;
+        }
+
         
 
       
-        let [b2,b3,b4,b5,b6] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:""); 
-        
-        console.log([b2,b3,b4,b5,b6]);
+
 
         let tests = [];
 
