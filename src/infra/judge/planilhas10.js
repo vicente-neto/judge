@@ -3,8 +3,18 @@ const GoogleApi = require('../google-api');
 
 class Planilhas10 extends DriveJudge{
     async deliberate(){
-        let formulario = await GoogleApi.getPropertiesSheet(this.firstIdDriveFile(),"'movimentações'!A2:D2");
         
+        let formulario;
+
+        try {
+            formulario = await GoogleApi.getPropertiesSheet(this.firstIdDriveFile(),"'movimentações'!A2:D2");
+  
+        } catch (error) {
+            this.assert(false,"verifique se existe a página 'movimentações'!",0);
+            return;
+        }
+
+
         let tests = [];
 
         try {
