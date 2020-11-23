@@ -66,7 +66,7 @@ switch (params.shift()) {
                 }));
         break;
     case "list-students":
-        GoogleApi.studentsByCourse(params.shift()).then(res=>console.log(res));
+        students();
         break;
     case "clone-topic-coursework":
         let courseSource = params.shift();
@@ -128,32 +128,23 @@ switch (params.shift()) {
     }));
     break;
 
+    case "update-grade":
+        updateGrade();
+    break;
+
 
     case "grade-courseworks":
-
-    GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
-   
-        GoogleApi.courseWorksByCourse(course.id)
-                .then(courseworks => {
-                   
-                  
-                        
-                        courseworks.forEach(coursework => {
-                            GoogleApi.studentGradeByCourseWork(course.id,coursework.id,true).then(courseworks=>courseworks.forEach(coursework=>
-                               // console.log(res.courseId+","+res.courseWorkId+","+res.userId+","+res.assignedGrade);
-                                fs.appendFile('alunos.txt', coursework.courseId+","+coursework.courseWorkId+","+coursework.userId+","+coursework.assignedGrade+"\n", function (err) {
-                                    if (err) throw err; 
-                                    
-                                  })
+        
+        grades(params.shift(),params.shift(),params.shift());
+    
+    break;
 
 
-                            ));
-                            
-                        })
-                    
-                    
-            });
-    }));
+    
+    case "submission-student":
+        
+        submissionByStudent(params.shift(),params.shift(),params.shift());
+    
     break;
 
 
@@ -179,6 +170,75 @@ switch (params.shift()) {
     default:
         break;
 }
+
+async function updateGrade(){
+    let data = await GoogleApi.batchGetSheet("17vP0AEGF-XrWF7Q0RIG1LkWxVR8gUeI7KbUFVUkJrig",[
+        `'importnotas'!B:C`
+    ]);
+    let submissions = data.valueRanges[0].values;
+}
+
+    async function grades(){
+        let courses = await GoogleApi.allCourses();
+        for(course of courses){
+            let courseworks = await GoogleApi.courseWorksByCourse(course.id);
+            for(coursework of courseworks){
+                let submissions = await GoogleApi.studentGradeByCourseWork(course.id,coursework.id,true);
+                for(submission of submissions){
+                    let student = await GoogleApi.studentByUserId(course.id,submission.userId);
+                    console.log(student);
+                    fs.appendFile('alunos.txt', course.name+","+coursework.id+","+coursework.title+","+submission.userId+","+submission.assignedGrade+","+student.name.fullName+","+student.emailAddress+"\n", function (err) {
+                        if (err) throw err; 
+                        
+                      });
+                }
+            }
+                  
+        }
+    
+    
+    }
+
+
+    async function grades(courseId,first,last){
+        let courseworks = await GoogleApi.courseWorksByCourse(courseId);
+        let i=0;
+        for(coursework of courseworks){
+            i++;
+            if(i>=first&&i<=last){
+                console.log(coursework.title);
+                let submissions = await GoogleApi.studentGradeByCourseWork(courseId,coursework.id,true);
+                for(submission of submissions){
+                   // console.log(submission);
+                    let student = await GoogleApi.studentByUserId(courseId,submission.userId);
+                    console.log(student.name.fullName);
+                    fs.appendFile('alunos.txt', coursework.id+","+coursework.title+","+submission.userId+","+submission.assignedGrade+","+student.name.fullName+","+student.emailAddress+"\n", function (err) {      if (err) throw err;   });
+                }
+            }
+            
+        }
+    
+    
+    }
+
+
+    async function students(){
+        let courses = await GoogleApi.allCourses();
+        for(course of courses){
+            let nameFile = "studentsOf"+course.name+".txt";
+            let students = await GoogleApi.studentsByCourse(course.id);
+            for(student of students){
+                fs.appendFile(nameFile, student+"\n", function (err) {      if (err) throw err;   });
+            }
+        }
+    }
+
+    async function submissionByStudent(name,title,email){
+        console.log("teste");
+        let submission = await GoogleApi.studentSubmissions(name,title,email);
+        console.log(submission);
+        
+    }
 
   //GoogleApi.
 

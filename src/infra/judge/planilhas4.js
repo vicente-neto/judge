@@ -93,18 +93,28 @@ class Planilhas4 extends DriveJudge{
                 ]
             );
     
-            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
-                [
-                    "pesquisa!C8"
-                ]
-            );
-    
-            [c8] = data.valueRanges.map((range)=>range.values[0][0]); 
+          
         } catch (error) {
 
             this.assert(false,"verifique se existe a página 'pesquisa'",0);
             return;
         }
+
+        try {
+            let data = await GoogleApi.batchGetSheet(this.firstIdDriveFile(),
+            [
+                "pesquisa!C8"
+            ]
+            );
+    
+            [c8] = data.valueRanges.map((range)=>range.values[0][0]);  
+        } catch (error) {
+            c8="";
+            
+        }
+
+        
+        
 
    
 

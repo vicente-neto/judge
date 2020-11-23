@@ -1,0 +1,374 @@
+205727768511,planilhas12,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+205727768511,planilhas12,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+205727768511,planilhas12,103886680314540803956,40,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+205728137844,planilhas11,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+205728137844,planilhas11,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+205728137844,planilhas11,103886680314540803956,90,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+205687360868,planilhas10,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+205687360868,planilhas10,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+205687360868,planilhas10,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+205687360868,planilhas10,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+205709457775,planilhas9,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+205709457775,planilhas9,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+205709457775,planilhas9,104773957194778601385,80,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+205709457775,planilhas9,108632471027241478420,60,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+205709457775,planilhas9,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+205709457775,planilhas9,113928668130071932604,0,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+205709457775,planilhas9,103886680314540803956,80,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+205709457775,planilhas9,109234966268691014411,60,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+205709304110,planilhas8,102584955704083281456,30,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+205709304110,planilhas8,109652578913517382600,55,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+205709304110,planilhas8,111840935609587961649,70,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+205709304110,planilhas8,107607431744962242101,70,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+205709304110,planilhas8,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+205709304110,planilhas8,109132208548145880486,30,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+205709304110,planilhas8,111767745696970540295,85,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+205709304110,planilhas8,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+205709304110,planilhas8,109221648069650198086,70,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+205709304110,planilhas8,112309550035559824062,70,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+205709304110,planilhas8,105643805301527134444,70,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+205709304110,planilhas8,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+205709304110,planilhas8,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+205709304110,planilhas8,113928668130071932604,55,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+205709304110,planilhas8,115828010702495731177,75,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+205709304110,planilhas8,107120294871462669919,85,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+205709304110,planilhas8,112584948935993738983,70,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+205709304110,planilhas8,101528739665893921482,70,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+205709304110,planilhas8,102798702675592467962,85,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+205709304110,planilhas8,117985008427553170702,70,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+205709304110,planilhas8,103886680314540803956,85,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+205709304110,planilhas8,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+205709304110,planilhas8,106165529524605442123,70,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+205709304110,planilhas8,114142484886327025483,55,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+204292548222,planilhas7,102584955704083281456,60,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+204292548222,planilhas7,104749772220382713927,20,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+204292548222,planilhas7,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+204292548222,planilhas7,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+204292548222,planilhas7,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+204292548222,planilhas7,107607431744962242101,60,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+204292548222,planilhas7,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+204292548222,planilhas7,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+204292548222,planilhas7,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+204292548222,planilhas7,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+204292548222,planilhas7,104773957194778601385,60,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+204292548222,planilhas7,108632471027241478420,75,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+204292548222,planilhas7,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+204292548222,planilhas7,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+204292548222,planilhas7,105643805301527134444,100,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+204292548222,planilhas7,106332671590228952556,60,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+204292548222,planilhas7,107350803089920157559,60,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+204292548222,planilhas7,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+204292548222,planilhas7,113928668130071932604,100,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+204292548222,planilhas7,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+204292548222,planilhas7,115828010702495731177,60,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+204292548222,planilhas7,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+204292548222,planilhas7,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+204292548222,planilhas7,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+204292548222,planilhas7,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+204292548222,planilhas7,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+204292548222,planilhas7,103886680314540803956,20,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+204292548222,planilhas7,109234966268691014411,60,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+204292548222,planilhas7,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+204292548222,planilhas7,102742824131685699556,60,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+204292548222,planilhas7,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+204073505783,planilhas5,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+204073505783,planilhas5,104749772220382713927,0,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+204073505783,planilhas5,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+204073505783,planilhas5,111840935609587961649,25,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+204073505783,planilhas5,112210769187004811386,0,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+204073505783,planilhas5,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+204073505783,planilhas5,107607431744962242101,75,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+204073505783,planilhas5,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+204073505783,planilhas5,114823615999827748287,0,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+204073505783,planilhas5,109132208548145880486,75,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+204073505783,planilhas5,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+204073505783,planilhas5,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+204073505783,planilhas5,108632471027241478420,0,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+204073505783,planilhas5,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+204073505783,planilhas5,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+204073505783,planilhas5,105643805301527134444,100,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+204073505783,planilhas5,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+204073505783,planilhas5,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+204073505783,planilhas5,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+204073505783,planilhas5,113928668130071932604,100,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+204073505783,planilhas5,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+204073505783,planilhas5,115828010702495731177,75,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+204073505783,planilhas5,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+204073505783,planilhas5,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+204073505783,planilhas5,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+204073505783,planilhas5,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+204073505783,planilhas5,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+204073505783,planilhas5,103886680314540803956,75,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+204073505783,planilhas5,109234966268691014411,75,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+204073505783,planilhas5,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+204073505783,planilhas5,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+204073505783,planilhas5,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+204073331875,planilhas4,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+204073331875,planilhas4,104749772220382713927,75,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+204073331875,planilhas4,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+204073331875,planilhas4,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+204073331875,planilhas4,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+204073331875,planilhas4,107607431744962242101,100,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+204073331875,planilhas4,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+204073331875,planilhas4,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+204073331875,planilhas4,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+204073331875,planilhas4,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+204073331875,planilhas4,104773957194778601385,75,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+204073331875,planilhas4,108632471027241478420,75,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+204073331875,planilhas4,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+204073331875,planilhas4,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+204073331875,planilhas4,105643805301527134444,100,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+204073331875,planilhas4,106332671590228952556,75,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+204073331875,planilhas4,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+204073331875,planilhas4,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+204073331875,planilhas4,113928668130071932604,100,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+204073331875,planilhas4,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+204073331875,planilhas4,115828010702495731177,0,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+204073331875,planilhas4,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+204073331875,planilhas4,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+204073331875,planilhas4,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+204073331875,planilhas4,102798702675592467962,75,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+204073331875,planilhas4,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+204073331875,planilhas4,103886680314540803956,25,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+204073331875,planilhas4,109234966268691014411,75,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+204073331875,planilhas4,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+204073331875,planilhas4,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+204073331875,planilhas4,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+204073331876,planilhas6,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+204073331876,planilhas6,104749772220382713927,0,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+204073331876,planilhas6,109652578913517382600,75,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+204073331876,planilhas6,111840935609587961649,75,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+204073331876,planilhas6,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+204073331876,planilhas6,107607431744962242101,0,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+204073331876,planilhas6,109997976414160343863,0,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+204073331876,planilhas6,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+204073331876,planilhas6,109132208548145880486,75,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+204073331876,planilhas6,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+204073331876,planilhas6,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+204073331876,planilhas6,109221648069650198086,75,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+204073331876,planilhas6,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+204073331876,planilhas6,105643805301527134444,75,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+204073331876,planilhas6,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+204073331876,planilhas6,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+204073331876,planilhas6,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+204073331876,planilhas6,113928668130071932604,75,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+204073331876,planilhas6,112843933227409503737,75,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+204073331876,planilhas6,115828010702495731177,0,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+204073331876,planilhas6,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+204073331876,planilhas6,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+204073331876,planilhas6,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+204073331876,planilhas6,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+204073331876,planilhas6,117985008427553170702,75,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+204073331876,planilhas6,103886680314540803956,0,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+204073331876,planilhas6,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+204073331876,planilhas6,106165529524605442123,75,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+204073331876,planilhas6,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+204073331876,planilhas6,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+199544881123,planilhas1,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+199544881123,planilhas1,104749772220382713927,40,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+199544881123,planilhas1,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+199544881123,planilhas1,111840935609587961649,80,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+199544881123,planilhas1,112210769187004811386,80,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+199544881123,planilhas1,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+199544881123,planilhas1,107607431744962242101,80,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+199544881123,planilhas1,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+199544881123,planilhas1,114823615999827748287,80,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+199544881123,planilhas1,109132208548145880486,80,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+199544881123,planilhas1,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+199544881123,planilhas1,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+199544881123,planilhas1,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+199544881123,planilhas1,109221648069650198086,80,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+199544881123,planilhas1,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+199544881123,planilhas1,105643805301527134444,80,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+199544881123,planilhas1,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+199544881123,planilhas1,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+199544881123,planilhas1,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+199544881123,planilhas1,113928668130071932604,100,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+199544881123,planilhas1,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+199544881123,planilhas1,115828010702495731177,80,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+199544881123,planilhas1,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+199544881123,planilhas1,112584948935993738983,80,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+199544881123,planilhas1,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+199544881123,planilhas1,102798702675592467962,80,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+199544881123,planilhas1,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+199544881123,planilhas1,103886680314540803956,80,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+199544881123,planilhas1,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+199544881123,planilhas1,106165529524605442123,80,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+199544881123,planilhas1,102742824131685699556,80,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+199544881123,planilhas1,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+199546148048,planilhas2,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+199546148048,planilhas2,104749772220382713927,80,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+199546148048,planilhas2,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+199546148048,planilhas2,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+199546148048,planilhas2,112210769187004811386,40,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+199546148048,planilhas2,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+199546148048,planilhas2,107607431744962242101,100,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+199546148048,planilhas2,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+199546148048,planilhas2,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+199546148048,planilhas2,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+199546148048,planilhas2,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+199546148048,planilhas2,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+199546148048,planilhas2,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+199546148048,planilhas2,109221648069650198086,80,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+199546148048,planilhas2,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+199546148048,planilhas2,105643805301527134444,100,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+199546148048,planilhas2,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+199546148048,planilhas2,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+199546148048,planilhas2,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+199546148048,planilhas2,113928668130071932604,20,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+199546148048,planilhas2,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+199546148048,planilhas2,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+199546148048,planilhas2,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+199546148048,planilhas2,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+199546148048,planilhas2,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+199546148048,planilhas2,102798702675592467962,80,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+199546148048,planilhas2,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+199546148048,planilhas2,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+199546148048,planilhas2,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+199546148048,planilhas2,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+199546148048,planilhas2,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+199546759223,planilhas3,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+199546759223,planilhas3,104749772220382713927,100,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+199546759223,planilhas3,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+199546759223,planilhas3,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+199546759223,planilhas3,112692074035193294663,0,Ana Luiza Emmanuele Torres dos Santos,emmanuele.santos@escolar.ifrn.edu.br
+199546759223,planilhas3,107607431744962242101,100,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+199546759223,planilhas3,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+199546759223,planilhas3,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+199546759223,planilhas3,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+199546759223,planilhas3,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+199546759223,planilhas3,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+199546759223,planilhas3,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+199546759223,planilhas3,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+199546759223,planilhas3,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+199546759223,planilhas3,105643805301527134444,100,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+199546759223,planilhas3,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+199546759223,planilhas3,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+199546759223,planilhas3,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+199546759223,planilhas3,113928668130071932604,25,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+199546759223,planilhas3,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+199546759223,planilhas3,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+199546759223,planilhas3,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+199546759223,planilhas3,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+199546759223,planilhas3,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+199546759223,planilhas3,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+199546759223,planilhas3,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+199546759223,planilhas3,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+199546759223,planilhas3,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+199546759223,planilhas3,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+199546759223,planilhas3,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+186620579771,upload,102584955704083281456,0,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+186620579771,upload,104749772220382713927,100,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+186620579771,upload,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+186620579771,upload,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+186620579771,upload,112210769187004811386,50,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+186620579771,upload,107607431744962242101,50,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+186620579771,upload,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+186620579771,upload,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+186620579771,upload,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+186620579771,upload,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+186620579771,upload,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+186620579771,upload,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+186620579771,upload,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+186620579771,upload,105643805301527134444,50,Adeilson Martins Cordeiro,adeilson.martins@escolar.ifrn.edu.br
+186620579771,upload,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+186620579771,upload,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+186620579771,upload,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+186620579771,upload,113928668130071932604,50,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+186620579771,upload,106789820524696949308,0,GABRIEL CARLOS FREIRE DA SILVA,freire.gabriel@escolar.ifrn.edu.br
+186620579771,upload,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+186620579771,upload,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+186620579771,upload,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+186620579771,upload,112584948935993738983,50,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+186620579771,upload,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+186620579771,upload,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+186620579771,upload,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+186620579771,upload,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+186620579771,upload,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+186620579771,upload,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+186620579771,upload,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+186620579771,upload,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+186621279085,versoes,102584955704083281456,0,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+186621279085,versoes,104749772220382713927,100,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+186621279085,versoes,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+186621279085,versoes,111840935609587961649,50,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+186621279085,versoes,112210769187004811386,50,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+186621279085,versoes,107607431744962242101,100,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+186621279085,versoes,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+186621279085,versoes,114823615999827748287,50,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+186621279085,versoes,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+186621279085,versoes,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+186621279085,versoes,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+186621279085,versoes,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+186621279085,versoes,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+186621279085,versoes,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+186621279085,versoes,107350803089920157559,50,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+186621279085,versoes,113928668130071932604,50,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+186621279085,versoes,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+186621279085,versoes,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+186621279085,versoes,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+186621279085,versoes,101528739665893921482,50,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+186621279085,versoes,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+186621279085,versoes,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+186621279085,versoes,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+186621279085,versoes,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+186621279085,versoes,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+186621541389,comente,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+186621541389,comente,104749772220382713927,100,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+186621541389,comente,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+186621541389,comente,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+186621541389,comente,112210769187004811386,100,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+186621541389,comente,107607431744962242101,50,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+186621541389,comente,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+186621541389,comente,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+186621541389,comente,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+186621541389,comente,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+186621541389,comente,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+186621541389,comente,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+186621541389,comente,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+186621541389,comente,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+186621541389,comente,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+186621541389,comente,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+186621541389,comente,113928668130071932604,50,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+186621541389,comente,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+186621541389,comente,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+186621541389,comente,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+186621541389,comente,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+186621541389,comente,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+186621541389,comente,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+186621541389,comente,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+186621541389,comente,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+186621541389,comente,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+186621541389,comente,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+186621541389,comente,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br
+186621608704,lixeira,102584955704083281456,100,Tiago Lopes dos Santos,tiago.santos@escolar.ifrn.edu.br
+186621608704,lixeira,104749772220382713927,0,Anna Izabelly Mendes Leocádio,izabelly.leocadio@escolar.ifrn.edu.br
+186621608704,lixeira,109652578913517382600,100,Rudson Barbosa de Lima,rudson.b@escolar.ifrn.edu.br
+186621608704,lixeira,111840935609587961649,100,João Pedro Ferreira da Silva,ferreira.pedro@escolar.ifrn.edu.br
+186621608704,lixeira,112210769187004811386,100,Gabriel Souza do Nascimento,nascimento.gabriel@escolar.ifrn.edu.br
+186621608704,lixeira,107607431744962242101,100,Pedro Afonso Souza do Nascimento,afonso.souza@escolar.ifrn.edu.br
+186621608704,lixeira,109997976414160343863,100,Kevin Leandro Alves Tavares,kevin.leandro@escolar.ifrn.edu.br
+186621608704,lixeira,114823615999827748287,100,Lucas Calheiros Cardoso,lucas.calheiros@escolar.ifrn.edu.br
+186621608704,lixeira,109132208548145880486,100,Mackson Thawan Cambraia de Lima,mackson.thawan@escolar.ifrn.edu.br
+186621608704,lixeira,111767745696970540295,100,Vinicius Domingos Marques,domingos.v@escolar.ifrn.edu.br
+186621608704,lixeira,104773957194778601385,100,Ana Luiza Rodrigues do Nascimento,n.luiza@escolar.ifrn.edu.br
+186621608704,lixeira,108632471027241478420,100,Aynoã Silvano Dantas,aynoa.dantas@escolar.ifrn.edu.br
+186621608704,lixeira,109221648069650198086,100,Jadson de Medeiros Souza,jadson.souza@escolar.ifrn.edu.br
+186621608704,lixeira,112309550035559824062,100,Luiz Felipe Fernandes da Silva,silva.felipe1@escolar.ifrn.edu.br
+186621608704,lixeira,106332671590228952556,100,Maria Clara de Souza Oliveira,clara.souza1@escolar.ifrn.edu.br
+186621608704,lixeira,107350803089920157559,100,Felipe Gabriel Lopes da Silva,lopes.f@escolar.ifrn.edu.br
+186621608704,lixeira,111446584054325774039,100,TAYNA ALANNE BARBOSA DA SILVA,tayna.a@escolar.ifrn.edu.br
+186621608704,lixeira,113928668130071932604,0,Anderson Eduardo Avelino de Farias,anderson.avelino@escolar.ifrn.edu.br
+186621608704,lixeira,106789820524696949308,0,GABRIEL CARLOS FREIRE DA SILVA,freire.gabriel@escolar.ifrn.edu.br
+186621608704,lixeira,112843933227409503737,100,MARCOS VINICIOS CARDOSO DA FONSECA,marcos.cardoso@escolar.ifrn.edu.br
+186621608704,lixeira,115828010702495731177,100,José Rubens de Souza Rocha,rubens.rocha@escolar.ifrn.edu.br
+186621608704,lixeira,107120294871462669919,100,PEDRO HENRIQUE SOARES DA SILVA,pedro.soares1@escolar.ifrn.edu.br
+186621608704,lixeira,112584948935993738983,100,Kéchella Wanessa Dantas da Silva,w.kechella@escolar.ifrn.edu.br
+186621608704,lixeira,101528739665893921482,100,ESTEFANI BEATRIZ LOPES FRANCELINO,lopes.estefani@escolar.ifrn.edu.br
+186621608704,lixeira,102798702675592467962,100,Luiz Felipe Domingos do Nascimento,luiz.domingos@escolar.ifrn.edu.br
+186621608704,lixeira,117985008427553170702,100,MARIA VITÓRIA DALIANE LARISSA ARAÚJO RODRIGUES,daliane.larissa@escolar.ifrn.edu.br
+186621608704,lixeira,103886680314540803956,100,Hylana Kariny Silva de Sousa,hylana.silva@escolar.ifrn.edu.br
+186621608704,lixeira,109234966268691014411,100,Antonely Barbosa da Silva,antonely.b@escolar.ifrn.edu.br
+186621608704,lixeira,106165529524605442123,100,Luan Alfredo de Lima Trajano,luan.alfredo@escolar.ifrn.edu.br
+186621608704,lixeira,102742824131685699556,100,Guilherme Teixeira Fagundes,guilherme.teixeira@escolar.ifrn.edu.br
+186621608704,lixeira,114142484886327025483,100,Emanoel Ferreira dos Santos,emanoel.santos@escolar.ifrn.edu.br

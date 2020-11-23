@@ -74,9 +74,9 @@ class Planilhas6 extends DriveJudge{
             [aviso] = data.valueRanges.map((range)=>range.values[0][0]);      
 
         } catch (error) {
-            console.log(error);
-            this.assert(false,"verifique a existência a página 'vendas de combos'",0);
-            return;
+            
+            aviso = "";
+          
         }
               
         let regexp = new RegExp(novoCombo,"i");

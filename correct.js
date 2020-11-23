@@ -105,6 +105,44 @@ class Correct{
         .catch((rej)=>console.log(rej));
     }  
 
+
+    static runByStudent(name,title,email,submeter){
+        GoogleApi.studentSubmissions(name,title,email)
+        .then(
+            cws=>{
+                try {
+                    let  path;
+                    let Judge;
+                    if(/(?<class>.*)\(python\)$/.test(cws.coursework.title)){
+                        path = cws.courseWork.title.match(/(?<path>.*)\(python\)$/).groups.path;    
+                        Judge = new require("./src/infra/judge/pythonJudge");
+                        
+                    }else{
+                        Judge = new require("./src/infra/judge/"+cws.coursework.title);
+                    }
+                    try { 
+                        let judge;       
+                        if(path){
+                            judge = new Judge(path);
+                        }else{
+                            judge = new Judge();
+                        }
+                        judge.init(cws.student);                 
+                        judge.deliberate().then(()=>{
+                            judge.outcome(submeter=="true");
+                            judge.publish(submeter=="true"); 
+                        }); 
+                    } catch (error) {
+                        console.log(error.toString());                                      
+                    }    
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        )
+        .catch((rej)=>console.log(rej));
+    }  
+
 }
 
 module.exports = Correct;

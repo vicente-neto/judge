@@ -46,7 +46,7 @@ class Planilhas12 extends DriveJudge{
 
             [b2,b3,b4,b5,b6] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:""); 
         
-          
+          console.log( [b2,b3,b4,b5,b6]);
         } catch (error) {
 
             this.assert(false,"verifique se existe a página 'perguntas'",0);

@@ -11,9 +11,9 @@ class Planilhas1 extends DriveJudge{
         ).then(res=>{
             try {
                 let propertie = res.data.sheets[0].data[0].rowMetadata.find(p=>p.hasOwnProperty("pixelSize")).pixelSize; 
-                this.assert(propertie==40,"linhas devem ter 40 pixel",10);
+                this.assert(propertie>=40,"linhas devem ter mais de 40 pixel",10);
                 propertie = res.data.sheets[0].data[0].columnMetadata.find(p=>p.hasOwnProperty("pixelSize")).pixelSize;
-                this.assert(propertie==200,"colunas devem ter 200 pixel",10);
+                this.assert(propertie>=200,"colunas devem ter mais de 200 pixel",10);
                 propertie = res.data.properties.title;
                 this.assert(/Compartilhamento/i.test(propertie),"título deve ser 'Compartilhamento'",20);
                 propertie = res.data.sheets[0].data[0].rowData[0].values[0].userEnteredFormat.horizontalAlignment;

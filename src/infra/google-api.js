@@ -101,6 +101,8 @@ class GoogleApi {
 
   
 
+  
+
     static getValuesSheet(id,range){
         return GoogleApi.getsheets().spreadsheets.get(
             {
@@ -170,7 +172,7 @@ class GoogleApi {
                     }));
                     
                 })
-            .catch(rej=>[rej]);
+            .catch(rej=>[]);
         return promise;
     }
 
@@ -205,6 +207,59 @@ class GoogleApi {
     }  
 
 
+    static async  studentSubmissions(courseName,courseworkTitle,email){
+
+        let response = await GoogleApi.getclassroom().courses.list().then(courses=>courses);
+        let course = response.data.courses.find(course=>{
+            let re = new RegExp(courseName,"i");
+            return re.test(course.name);
+        });
+        
+        
+        response = await GoogleApi.getclassroom().userProfiles.get({userId:email});
+
+        
+     
+        let user = response.data;
+
+        
+       
+
+        let courseworks = await GoogleApi.getclassroom().courses.courseWork.list({courseId:course.id}).then(response=>response.data.courseWork).catch(rej=>[]);
+        let coursework = courseworks.find(coursework=>{
+            let re = new RegExp(courseworkTitle,"i");
+            return re.test(coursework.title);
+        });
+
+       
+         
+        if(!coursework){
+            return undefined;
+        }
+
+        let studentSubmissions = await GoogleApi.getclassroom().courses.courseWork.studentSubmissions
+                        .list(
+                            {
+                                courseId: course.id,
+                                courseWorkId: coursework.id
+
+                            }).then(response=>{return response.data.studentSubmissions}).catch(rej=>[]);
+       
+        let studentSubmission = studentSubmissions.find(studentSubmission=>{
+            return studentSubmission.userId == user.id
+        });
+
+        
+        
+        return {
+            course:course,
+            coursework:coursework,
+            student:studentSubmission
+        };;
+
+    }  
+
+
     static studentGradeByCourseWork(courseId,courseWorkId,all=false){
         return GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list({
             courseId: courseId,
@@ -212,14 +267,18 @@ class GoogleApi {
             states: 'TURNED_IN'
           })
             .then(  
-                res=>
-                res.data.studentSubmissions
+                res=>{
+
+                    //console.log(res);
+                   return res.data.studentSubmissions
                     .filter(
                         studentSubmission=>
                         all||studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')
                     ).map(studentSubmission=>{
                         return studentSubmission;
                     })
+                }
+                
                 )
             .catch(rej=>[]);
     }  

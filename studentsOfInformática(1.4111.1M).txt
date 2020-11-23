@@ -1,0 +1,46 @@
+178439734263,108871416645937560669,Karen Eduarda Monteiro Barbosa Moreira,monteiro.eduarda@escolar.ifrn.edu.br
+178439734263,108013265369200929093,Darllyane Mercês Torres de Lima,darllyane.torres@escolar.ifrn.edu.br
+178439734263,103682829203680404823,Débora Mendes de Lima,debora.mendes@escolar.ifrn.edu.br
+178439734263,101741985541191802394,Bianca Bezerra Pires,bianca.b@escolar.ifrn.edu.br
+178439734263,104103575890650373861,Gabriel Fernandes Costa de Oliveira,o.fernandes@escolar.ifrn.edu.br
+178439734263,103537447073909407440,Melissa Bianca Pitanga Vicentini Cardoso de Mello,bianca.melissa@escolar.ifrn.edu.br
+178439734263,110625257646394918874,EDYELLEN BRENDA GOMES DA ROCHA,brenda.gomes@escolar.ifrn.edu.br
+178439734263,112115044365461614096,Wendel Kauê Dos Santos Medeiros,kaue.santos@escolar.ifrn.edu.br
+178439734263,105335670940665619432,Johnatan Barbosa de Lima,johnatan.lima@escolar.ifrn.edu.br
+178439734263,117234890030309489191,Kauan Vinicius do vale da costa,kauan.c@escolar.ifrn.edu.br
+178439734263,115325219815245786885,Ailton Borges de Lima Filho,ailton.filho@escolar.ifrn.edu.br
+178439734263,102423599349147681733,Aslam Rocha,luiza.rocha@escolar.ifrn.edu.br
+178439734263,111583761111170846590,Maria Letícia Bandeira Ribeiro,ribeiro.b@escolar.ifrn.edu.br
+178439734263,105281019277983303812,Caio Victor Alves Justino,justino.caio@escolar.ifrn.edu.br
+178439734263,113105911209999971546,Ariele Teixeira de Sales,ariele.teixeira@escolar.ifrn.edu.br
+178439734263,107704320037005927518,Adriel Santos de Sousa,santos.adriel@escolar.ifrn.edu.br
+178439734263,102645440149098980974,Ana Beatriz Souza de Andrade,andrade.b@escolar.ifrn.edu.br
+178439734263,109857311177390695633,Agadama Talyta de Sousa Pontes,talyta.sousa@escolar.ifrn.edu.br
+178439734263,105842055257580277389,Mauricio Dhiogo Vieira Estevam,mauricio.d@escolar.ifrn.edu.br
+178439734263,100329321375693898343,Antonio Marcio Gomes da Camara Filho,marcio.c@escolar.ifrn.edu.br
+178439734263,113235694865533728498,Ines Cristina Cardoso Cardoso,ignescardoso@gmail.com
+178439734263,110710238065868059573,Janielly da Silva costa,janielly.costa@escolar.ifrn.edu.br
+178439734263,110752521757195399624,Elizabeth Nascimento da Silva,nascimento.elizabeth@escolar.ifrn.edu.br
+178439734263,118344414033991849396,MICHELI RAIANE DA SILVA DE SOUZA,micheli.raiane@escolar.ifrn.edu.br
+178439734263,109494702989068855040,Diogo Henrique Costa Marques,henrique.diogo@escolar.ifrn.edu.br
+178439734263,110638694404610001213,Rayssa Beatriz Ribeiro Cavalcante,b.rayssa@escolar.ifrn.edu.br
+178439734263,102093657969737088317,Vicente Aluno,vicnet.aluno@gmail.com
+178439734263,110885858030446889680,Samuel da Silva Oliveira,samuel.silva1@escolar.ifrn.edu.br
+178439734263,102965394542902023996,Lucas Gabriel Dos Santos Anizio,santos.anizio@escolar.ifrn.edu.br
+178439734263,103944896127989249512,Pedro Augusto Dantas Fragoso,pedro.fragoso@escolar.ifrn.edu.br
+178439734263,102752817415946822244,Manoela Vitória Lemos de Oliveira,manoela.l@escolar.ifrn.edu.br
+178439734263,108123656579823439935,Talita Micheli Martins De Souza,talita.martins@escolar.ifrn.edu.br
+178439734263,102771702082995488004,José Ferreira de Moura Júnior,moura.ferreira@escolar.ifrn.edu.br
+178439734263,110445379183503787537,Filipe Ferreira Victor,v.filipe@escolar.ifrn.edu.br
+178439734263,111744240896894840528,Marta Garcia de Medeiros,marta.medeiros@escolar.ifrn.edu.br
+178439734263,112809396463815089630,Yana Carlisle Ribeiro de Miranda,yana.carlisle@escolar.ifrn.edu.br
+178439734263,117080888980127356491,Renato damasceno de souza,renato.damasceno@escolar.ifrn.edu.br
+178439734263,108052703546469060727,Antonio Vinicius Melo da Silva,antonio.v@escolar.ifrn.edu.br
+178439734263,111778925208858352667,Brenda Andrade da Costa,c.brenda@escolar.ifrn.edu.br
+178439734263,109390900435722353876,Lo-Ruama Eulália,ruama.oliveira@escolar.ifrn.edu.br
+178439734263,111208723039544890198,Jonathan Silva Moura,jonathan.silva@escolar.ifrn.edu.br
+178439734263,116730985484511775228,Ana Paula Holanda Soares,holanda.ana@escolar.ifrn.edu.br
+178439734263,107714700675800356682,Maria Luíza Lemos Fernandes,luiza.lemos@escolar.ifrn.edu.br
+178439734263,108792873754815786292,Bruna Gabriela dos Santos Borges,bruna.borges@escolar.ifrn.edu.br
+178439734263,109704694294512056234,Jennif Pinheiro dos Anjos,jennif.a@escolar.ifrn.edu.br
+178439734263,107256783683483251794,Moisés Queiroz Araújo,moises.q@escolar.ifrn.edu.br

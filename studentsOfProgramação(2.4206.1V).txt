@@ -1,0 +1,36 @@
+178519572705,114908105815586230091,Bruno Cunha Silveira,bruno.cunha@escolar.ifrn.edu.br
+178519572705,100708714551806443914,Daniel Martins dos santos nascimento,martins.daniel@escolar.ifrn.edu.br
+178519572705,111308607888452381674,Euclides Severino de Oliveira Netto,netto.o@escolar.ifrn.edu.br
+178519572705,108191149010726443097,BEATRIZ ARAUJO FINIZOLA FILGUEIRA,b.finizola@escolar.ifrn.edu.br
+178519572705,104448884472476895582,DEISYANNE BIANCA DO NASCIMENTO,deisyanne.n@escolar.ifrn.edu.br
+178519572705,109761213121097244738,Diego Idalino Siqueira,diego.i@escolar.ifrn.edu.br
+178519572705,110679432889645139891,Rafael Costa Marques,costa.marques@escolar.ifrn.edu.br
+178519572705,117913615534149904671,Julianno Christopher Neves de Souza,julianno.c@escolar.ifrn.edu.br
+178519572705,101939205769593385762,Lucas Eduardo Lima de Souza,lima.eduardo@escolar.ifrn.edu.br
+178519572705,101978723698897091369,André Felipe de Freire Melo,felipe.melo@escolar.ifrn.edu.br
+178519572705,100344211449954206197,Pedro Lúcio Lima Soares,p.lucio@escolar.ifrn.edu.br
+178519572705,112424415144679626531,Ronald de Freitas Cândido,f.ronald@escolar.ifrn.edu.br
+178519572705,108168444743788663521,Alexandre Mateus Nascimento Silva,alexandre.n@escolar.ifrn.edu.br
+178519572705,108511852671309516160,JULIANA FELICIANO SILVA DE SOUZA,feliciano.souza@escolar.ifrn.edu.br
+178519572705,108009292735033787796,Kallyano Ribeiro,k.ribeiro@escolar.ifrn.edu.br
+178519572705,106485813548964447705,Pedro Sérgio dos Santos Medeiros,pedro.sergio@escolar.ifrn.edu.br
+178519572705,115538575701069018648,CIRILO MATHEUS DA SILVA SOARES,soares.cirilo@escolar.ifrn.edu.br
+178519572705,109598558224663912262,Maria Luisa Farias Da Rocha,luisa.r@escolar.ifrn.edu.br
+178519572705,103276672981486055242,Johnatan Isídio da Silva,johnatan.silva@escolar.ifrn.edu.br
+178519572705,115475352823553538222,Jaciele Lopes do Nascimento,jaciele.l@escolar.ifrn.edu.br
+178519572705,115124702542736191562,Ruan Moura de Souza,ruan.souza@escolar.ifrn.edu.br
+178519572705,106087280165895966045,Pedro Henrique da Silva Paixão,pedro.paixao@escolar.ifrn.edu.br
+178519572705,117922227566788543570,Aline Maria Josefa Cordeiro Nunes,a.josefa@escolar.ifrn.edu.br
+178519572705,111260057579522700830,Juliana Luiza da Silva,luiza.j@escolar.ifrn.edu.br
+178519572705,104765520012460320072,Matheus Silva Mendes,m.mendes@escolar.ifrn.edu.br
+178519572705,100994573248579721447,Pedro Felipe de Assunção Freitas,felipe.assuncao@escolar.ifrn.edu.br
+178519572705,117034962446742080468,Ray da Silva Torres,t.ray@escolar.ifrn.edu.br
+178519572705,111255056615543556604,Jeydson Alves Maximino,jeydson.alves@escolar.ifrn.edu.br
+178519572705,102637489828730022628,Lucas Fernando Sobreiro da Silva,l.sobreiro@escolar.ifrn.edu.br
+178519572705,104845996798324702927,Lucas Gabriel Praxedes dos Santos,lucas.praxedes@escolar.ifrn.edu.br
+178519572705,105478242176526070922,Jose Nadson Marinho da Silva,jose.marinho@escolar.ifrn.edu.br
+178519572705,103210951044478195034,Erick Henrique da Silva Paz,erick.paz@escolar.ifrn.edu.br
+178519572705,111047407161625362467,João Guilherme de Medeiros Silva,joao.guilherme1@escolar.ifrn.edu.br
+178519572705,111328250228460886391,Hibson Felipe Martins de Sousa,hibson.sousa@escolar.ifrn.edu.br
+178519572705,112075542281638508434,Marianne Costa de Oliveira,marianne.o@escolar.ifrn.edu.br
+178519572705,106718002227006560060,ERIKA DE CARVALHO ARAÚJO,erika.a@escolar.ifrn.edu.br
