@@ -1,5 +1,12 @@
-const customExpress = require('./src/config/custom-express');
-const app = customExpress();
-app.listen(3000, function() {
-    console.log(`Servidor rodando na porta 3000`);
-});
+const App = require("./src/app/JudgeApp");
+const consign = require('consign');
+
+let app = new App();
+
+consign()
+.include('src/routers')
+.into(app);
+
+//app.listen();
+app.run();
+

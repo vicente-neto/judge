@@ -1,5 +1,8 @@
 const {google} = require('googleapis');
 const oAuth2Client = require("../config/oauth2client");
+const Course = require('./Course');
+const Report = require('./Report');
+const StudentSubmission = require("./StudentSubmission");
 class GoogleApi {
 
     static getclassroom(){
@@ -115,36 +118,57 @@ class GoogleApi {
         .catch(()=>undefined);
 }
 
-    static allCourses(){
-        return GoogleApi.getclassroom().courses.list({
-            courseStates: 'ACTIVE'
-          }).then(res=>res.data.courses);
+    static async allCourses(){
+        let res = await GoogleApi.getclassroom().courses.list({courseStates: 'ACTIVE'});
+        return res.data.courses.map(course=>new Course(course)); 
     }
+
+    static async coursesByClassroom(params){
+        let courses =  await GoogleApi.allCourses();
+        for(course of courses){
+            let courseWorks = await GoogleApi.courseWorksByCourse({courseId:course.id});
+            for(courseWork of courseWorks){
+                let studentSubmissions = await GoogleApi.studentSubmissionsByCourseWork(course,courseWork);        
+            }    
+        }
+        courses = await Promise.all(courses.map(async(course)=>{
+            let courseWorks = await GoogleApi.courseWorksByCourse({courseId:course.id});
+            courseWorks = await Promise.all(courseWorks.map(async(courseWork)=>{
+                let query = {courseId:courseWork.courseId,courseWork:courseWork};
+                if(params.userId){
+                    query.userId = params.userId;
+                }
+                let studentSubmissions = await GoogleApi.studentSubmissionsByCourseWork(query);
+                return {
+                    details:courseWork,
+                    studentSubmissions:studentSubmissions
+                }
+            }));
+            return {
+            details:course,
+            courseWorks: courseWorks 
+        }}));
+        return courses;
+
+    }
+
     static getCourse(courseId){
         return GoogleApi.getclassroom().courses.get({
             id:courseId
           }).then(res=>res.data);
     }
-    static courseWorksByCourse(courseId,pageSize=0){
-        let parameters = { 
-            courseId: courseId,
-            pageSize: pageSize
+    static async courseWorksByCourse(params){
+        let res = await GoogleApi.getclassroom().courses.courseWork.list(params).catch(rej=>null);
+        if(res==null || !res.data.courseWork){
+            return [];
         }
-        let promise = GoogleApi.getclassroom().courses.courseWork.list(parameters)
-            .then(  
-                res=>{
-                    if(res.data.courseWork){
-                        return res.data.courseWork.filter(
-                            courseWork=>
-                            courseWork.hasOwnProperty("associatedWithDeveloper")
-                            )
-                    }
-                    else{
-                        return [];
-                    }
-                })
-            .catch(rej=>[]);
-        return promise;
+        let courseWorks = res.data.courseWork.filter(courseWork=>courseWork.associatedWithDeveloper);
+        if(res.data.nextPageToken){
+            let nextPages = await GoogleApi.courseWorksByCourse({courseId:params.courseId,PageToken:res.data.nextPageToken});
+            courseWorks = courseWorks.concat(nextPages); 
+            
+        }
+        return courseWorks;
     }
 
 
@@ -176,6 +200,32 @@ class GoogleApi {
         return promise;
     }
 
+
+    static announcementByCourse(courseId,pageToken=undefined){
+
+        let parameters = { 
+            courseId: courseId
+        }
+        if(pageToken){
+            parameters.pageToken = pageToken;
+        }
+        let promise = GoogleApi.getclassroom().courses.announcements.list(parameters)
+            .then(  
+                async res=>{
+                    let announcements = [];
+                    if(res.data.nextPageToken){
+                        let announcement = await GoogleApi.announcementByCourse(courseId,res.data.nextPageToken);
+                        announcements = announcements.concat(announcement); 
+                        
+                    }
+
+                    return announcements.concat(res.data.announcements);
+                    
+                })
+            .catch(rej=>[]);
+        return promise;
+    }
+
     static getCourseWork(courseId,courseWorkId){
         let parameters = { 
             courseId: courseId,
@@ -189,54 +239,46 @@ class GoogleApi {
         return promise;
     }
 
-    static studentSubmissionsByCourseWork(courseId,courseWorkId,all=false){
-        return GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list({
-            courseId: courseId,
-            courseWorkId: courseWorkId,
-            states: 'TURNED_IN'
-          })
-            .then(  
-                res=>
-                res.data.studentSubmissions
-                    .filter(
-                        studentSubmission=>
-                        all||studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')
-                    )
-                )
-            .catch(rej=>[]);
+    static async studentSubmissionsByCourseWork(params){
+        let listParams = {
+
+        };
+        params.states = 'TURNED_IN';
+        let res = await GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list(params).catch((rej)=>null);
+        if(res==null||res.data.studentSubmissions==undefined){
+            return [];
+        }
+        let studentSubmissions = res.data.studentSubmissions.
+            filter(
+                studentSubmission=>
+                params.all||studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory')
+            );
+        if(res.data.nextPageToken){
+            let nextPages = await GoogleApi.studentSubmissionsByCourseWork({courseId:params.courseId,courseWorkId:params.courseWorkId,pageToken:res.data.nextPageToken,all:params.all});
+            studentSubmissions=studentSubmissions.concat(nextPages);
+        }
+        studentSubmissions = studentSubmissions.map(studentSubmission=>new StudentSubmission(courseWork,studentSubmission,new Report()));
+        return studentSubmissions;
+        
     }  
 
 
     static async  studentSubmissions(courseName,courseworkTitle,email){
-
+       // console.log([courseName,courseworkTitle,email]);
         let response = await GoogleApi.getclassroom().courses.list().then(courses=>courses);
-        let course = response.data.courses.find(course=>{
-            let re = new RegExp(courseName,"i");
-            return re.test(course.name);
-        });
-        
-        
+       // console.log(response.data.courses);
+        let course = response.data.courses.find(course=>course.name.includes(courseName));
+       // console.log(course);
         response = await GoogleApi.getclassroom().userProfiles.get({userId:email});
-
-        
-     
         let user = response.data;
-
-        
-       
-
         let courseworks = await GoogleApi.getclassroom().courses.courseWork.list({courseId:course.id}).then(response=>response.data.courseWork).catch(rej=>[]);
-        let coursework = courseworks.find(coursework=>{
-            let re = new RegExp(courseworkTitle,"i");
-            return re.test(coursework.title);
-        });
-
-       
-         
+        console.log(courseworkTitle);
+        let coursework = courseworks.find(coursework=>coursework.title.endsWith(courseworkTitle));
+      
         if(!coursework){
+            
             return undefined;
         }
-
         let studentSubmissions = await GoogleApi.getclassroom().courses.courseWork.studentSubmissions
                         .list(
                             {
@@ -250,12 +292,12 @@ class GoogleApi {
         });
 
         
-        
+       
         return {
             course:course,
             coursework:coursework,
             student:studentSubmission
-        };;
+        };
 
     }  
 

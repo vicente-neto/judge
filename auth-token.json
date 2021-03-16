@@ -1,0 +1,13 @@
+{
+    "web":
+    {
+        "client_id":"202585764161-ne3vmrmc4tgjtj54t0atmfi9jie68nel.apps.googleusercontent.com",
+        "project_id":"helper-classroom",
+        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret":"X24vZaXKOtloNpppsfJUzgBP",
+        "redirect_uris":["http://localhost:3000/oauth2callback"]
+    },
+    "refresh_token":"1//0h3d_XAaQaKRbCgYIARAAGBESNwF-L9IrSogFX2i_nw89yQXaV2Al102f2qOBUzoH-DpUJAX_gTx8IZ7bMcDnOXyaTMfIt9uX8Y8"
+}

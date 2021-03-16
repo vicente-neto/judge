@@ -22,6 +22,7 @@ class DriveJudge extends Judge{
     }
 
     get_content(){
+       // DriveJudge.drive.files.get({fileId:this.firstIdDriveFile(),alt:"media"}).then((res)=>console.log(res.data));
         return DriveJudge.drive.files.get({fileId:this.firstIdDriveFile(),alt:"media"}).then((res)=>res.data);
     }  
 

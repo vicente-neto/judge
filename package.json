@@ -4,19 +4,16 @@
   "description": "juiz online",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "consign": "^0.1.6",
-    "download-file": "^0.1.5",
-    "express": "^4.17.1",
-    "extract-zip": "^2.0.1",
-    "google-auth-library": "^6.0.6",
+    "google-auth-library": "^6.1.4",
     "googleapis": "^59.0.0",
     "node-cron": "^2.0.3",
-    "nodemon": "^2.0.4"
+    "puppeteer": "^5.5.0"
   }
 }

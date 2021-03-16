@@ -4,7 +4,7 @@ gnomes = []
 
 def oimundo():
     """
-        Um simples Oi, mundo!
+        Um simple Oi, mundo!
     """
     global ois
     ois += 1
@@ -12,7 +12,7 @@ def oimundo():
     print("Oi, mundo!")
 
 
-def oifulano(nome="fulano"):
+def oifulano(nome="fulan"):
     global ois, gnomes
     ois += 1
     if nome not in gnomes:
@@ -55,10 +55,3 @@ def existerepetidos(lista):
         return True
     else:
         return False
-
-
-try:
-    oifulanos("ana", "bia", "carol")
-    print(len(cumprimentados()))
-except:
-    print('')

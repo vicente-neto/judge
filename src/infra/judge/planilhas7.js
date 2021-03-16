@@ -41,6 +41,7 @@ class Planilhas7 extends DriveJudge{
             ]);
            
             [k12,o4,o5,o6,o7] = data.valueRanges.map((range)=>range.hasOwnProperty("values")?range.values[0][0]:"");  
+            console.log([k12,o4,o5,o6,o7]);
         } catch (error) {
 
             this.assert(false,"não foi possível acessar algumas células da página tabela para verificação",0);

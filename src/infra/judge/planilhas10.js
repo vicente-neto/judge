@@ -4,11 +4,11 @@ const GoogleApi = require('../google-api');
 class Planilhas10 extends DriveJudge{
     async deliberate(){
         
-        let formulario;
+        let mov;
 
         try {
-            formulario = await GoogleApi.getPropertiesSheet(this.firstIdDriveFile(),"'movimentações'!A2:D2");
-  
+            let response = await GoogleApi.getPropertiesSheet(this.firstIdDriveFile(),"'movimentações'!A2:D2");
+            mov =  response.data.sheets[0];
         } catch (error) {
             this.assert(false,"verifique se existe a página 'movimentações'!",0);
             return;
@@ -16,10 +16,11 @@ class Planilhas10 extends DriveJudge{
 
 
         let tests = [];
+        
 
         try {
             tests.push(
-                formulario.data.sheets[0].data[0].rowData[0].values[0].effectiveFormat.numberFormat.type
+                mov.data[0].rowData[0].values[0].effectiveFormat.numberFormat.type
                 ==
                 "DATE_TIME"
                 );  
@@ -29,7 +30,7 @@ class Planilhas10 extends DriveJudge{
 
         try {
             tests.push(
-                formulario.data.sheets[0].data[0].rowData[0].values[1].dataValidation.condition.type
+                mov.data[0].rowData[0].values[1].dataValidation.condition.type
                 ==
                 "ONE_OF_RANGE"
                 );  
@@ -39,7 +40,7 @@ class Planilhas10 extends DriveJudge{
 
         try {
             tests.push(
-                formulario.data.sheets[0].data[0].rowData[0].values[2].dataValidation.condition.type
+                mov.data[0].rowData[0].values[2].dataValidation.condition.type
                 ==
                 "ONE_OF_LIST"
                 );  
@@ -49,7 +50,7 @@ class Planilhas10 extends DriveJudge{
 
         try {
             tests.push(
-                formulario.data.sheets[0].data[0].rowData[0].values[3].dataValidation.condition.type
+                mov.data[0].rowData[0].values[3].dataValidation.condition.type
                 ==
                 "NUMBER_GREATER"
                 );  
@@ -59,7 +60,7 @@ class Planilhas10 extends DriveJudge{
 
         try {
             tests.push(
-                formulario.data.sheets[0].conditionalFormats[0].booleanRule.condition.type
+                mov.conditionalFormats[0].booleanRule.condition.type
                 ==
                 "CUSTOM_FORMULA"
                 );  

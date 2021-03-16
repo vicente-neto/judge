@@ -1,34 +1,144 @@
 const DriveJudge = require('./driveJudge');
 const fs = require('fs');
+const pys = [
+    {
+        code:
+`
+try:
+    oimundo()
+except:
+    print('')
+`
+        ,
+        out:'Oi, mundo!',
+        msg:'problema na chamada de oimundo'
+    },
+    {
+        code:
+`
+try:
+    help(oimundo)
+except:
+    print('')
+`,
+        out:'Um simples Oi, mundo!',
+        msg:'problema no help de oimundo'
+    },
+    {
+        code:
+`
+try:
+    oifulano("ana")
+except:
+    print('')
+`,
+        out:'Oi, ana!',
+        msg:'problema na chamada de oifulano'
+    },
+    {
+        code:
+`
+try:
+    oifulano()
+except:
+    print('')
+`,
+        out:'Oi, fulano!',
+        msg:'problema na chamada de oifulano'
+    },
+    {
+        code:
+`
+try:
+    oifulanos("ana", "bia", "carol")
+except:
+    print('')
+`,
+        out:
+`Oi, carol!`,
+        msg:'problema na chamada de oifulanos'
+    },
+    {
+        code:
+`
+try:
+    oilista(["ana", "bia", "carol"])
+except:
+    print('')
+`,
+        out:
+`Oi, carol!`,
+        msg:'problema na chamada de oilista'
+    },
+    {
+        code:
+`
+try:
+    lista658 = ["ana", "bia", "carol"]
+    oilista(lista658)
+    print(len(lista658))
+except:
+    print('')
+`,
+        out:'3',
+        msg:'problema em esvaziar a lista na chamada oilista'
+    },
+    {
+        code:
+`
+try:
+    oimundo()
+    print(qtois())
+except:
+    print('')
+`,
+        out:'1',
+        msg:'problema na chamada de qtois'
+    },
+    {
+        code:
+`
+try:
+    oifulanos("ana", "ana", "bia", "carol")
+    print(len(cumprimentados()))
+except:
+    print('')
+`,
+        out:'3',
+        msg:'problema na chamada de cumprimentados com nomes repetidos'
+    },
+    {
+        code:
+`
+try:
+    oifulanos("ana", "bia", "carol")
+    print(len(cumprimentados()))
+except:
+    print('')
+`,
+        out:'3',
+        msg:'problema na chamada de cumprimentados'
+    }
+]
 class PythonJudge extends DriveJudge{
     constructor(path){
         super();
-        this._pathInput = "./python/input/"+path;
-        this._pathOutput = "./python/output/"+path;
+       // this._pathInput = "./python/input/"+path;
+       // this._pathOutput = "./python/output/"+path; 
     }
     deliberate(){
-        this.get_content().then((content)=>{
-            fs.writeFileSync('./python/student-submission.py',content);
-            let tests = fs.readdirSync(this._pathInput);
-            
-            let points = Array(tests.length).fill(Math.floor(100/tests.length));
-            points[0] += 100 - points.reduce((accumulator, currentValue) => accumulator + currentValue);
-            let testFault = 0;
-            for(let i=0;i<tests.length;i++){
-                let cmd = `python python/student-submission.py < ${this._pathInput}/${tests[i]}`;
+        return this.get_content().then((content)=>{
+            for(let py of pys){
+                fs.writeFileSync('./python/student-submission.py',content+"\n"+py.code);
+                let cmd = `python python/student-submission.py`;
                 try {
                     const exec = require('child_process').execSync;
-
                     let out = exec(cmd,{timeout: 1000,killSignal: 'SIGKILL'}).toString();
-                    let outtest = fs.readFileSync(`${this._pathOutput}/${tests[i]}`).toString();
-                    if(out==outtest){
-                       this.assert(true,"",points[i]);
-                    }else{
-                       testFault+=points[i]; 
-                    }
+                    this.assert(out.includes(py.out),py.msg,10);
                 } catch (error) {
                     let typeError;
                     if(/(?<typeError>(ETIMEDOUT)|(EOFError)|(SyntaxError)|(TypeError)|(NameError))/.test(error.message)){
+                        console.log(error.message);
                         typeError = error.message.match(/(?<typeError>(ETIMEDOUT)|(EOFError)|(SyntaxError)|(TypeError)|(NameError))/).groups.typeError;
                         
                     }else{
@@ -54,7 +164,6 @@ class PythonJudge extends DriveJudge{
                     break;
                 }
             }
-            this.assert(testFault==0,`${testFault}% dos testes falharam`,0);
         });
         
     }

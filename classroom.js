@@ -3,10 +3,16 @@ const fs = require('fs');
 
 let params = process.argv.splice(2);
 
+let run = async()=>{
 switch (params.shift()) {
+    case "teste":
+        GoogleApi.announcementByCourse(params[0]).then(res=>
+            console.log(res)
+        );
+        break;
     case "list-courses":
         GoogleApi.allCourses().then((courses)=>courses.forEach(course => {
-            console.log(`${course.id},${course.name}`);
+            console.log(`${course.fields.id},${course.fields.name}`);
         }));
         break;
     case "emails":
@@ -57,13 +63,10 @@ switch (params.shift()) {
                 .catch(erro => console.log(erro));
         break;
     case "list-courseworks":
-        GoogleApi.getclassroom().courses.courseWork.list(
-            {
-                courseId:params.shift()
-            })
-                .then(courseworks => courseworks.data.courseWork.filter((coursework)=>true).forEach(coursework => {
-                    console.log(`${coursework.courseId},${coursework.id},${coursework.title}, - topicId:${coursework.topicId}`);
-                }));
+        let courseworks = await GoogleApi.courseWorksByCourse({courseId:params.shift()});
+        courseworks.forEach(
+            coursework => 
+            console.log(`${coursework.courseId},${coursework.id},${coursework.title}, - topicId:${coursework.topicId}`));
         break;
     case "list-students":
         students();
@@ -170,6 +173,7 @@ switch (params.shift()) {
     default:
         break;
 }
+};
 
 async function updateGrade(){
     let data = await GoogleApi.batchGetSheet("17vP0AEGF-XrWF7Q0RIG1LkWxVR8gUeI7KbUFVUkJrig",[
@@ -236,9 +240,11 @@ async function updateGrade(){
     async function submissionByStudent(name,title,email){
         console.log("teste");
         let submission = await GoogleApi.studentSubmissions(name,title,email);
-        console.log(submission);
+        console.log(submission.student.assignmentSubmission.attachments[0]);
         
     }
+
+    run();
 
   //GoogleApi.
 
