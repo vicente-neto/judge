@@ -7,7 +7,7 @@ class PuppeteerJudge extends JudgeLink{
         if(!await super.prepare()){
             return false;
         }
-        this.browser = await puppeteer.launch().catch((e)=>{console.log(e);return null;});
+        this.browser = await puppeteer.launch({args: ["--no-sandbox", "--disable-setuid-sandbox"]}).catch((e)=>{console.log(e);return null;});
         if(!this.browser){
             this.report.assert(false,"problema na simulação de navegação!Reporte ao professor!",0);
             return false;

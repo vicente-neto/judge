@@ -24,9 +24,9 @@ class Judge{
             this.report.assert(false,msn,0);
         } finally{
             console.log(this.report);
-            await this.studentSubmission.score(this.report.grade);
+           // await this.studentSubmission.score(this.report.grade);
             let msn = `${this.courseWork.fields.title}: ${this.report}`;
-            await this.studentSubmission.publish(msn);
+           // await this.studentSubmission.publish(msn);
             await this.close();
         }
         
