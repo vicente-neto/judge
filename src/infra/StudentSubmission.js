@@ -34,6 +34,7 @@ class StudentSubmission{
     async process(){
         let judge = JudgeFactory.getJudge(this.courseWork,this);
         console.log("julgando studentSubmission de "+this.fields.userId);
+       // console.log(this.fields);
         await judge.process();
     }
 

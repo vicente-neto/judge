@@ -1,5 +1,5 @@
 const JudgeFactory = require("./judge/JudgeFactory");
-const StudentSubmission = require("./studentSubmission");
+const StudentSubmission = require("./StudentSubmission");
 
 class CourseWork{
     constructor(fields,course){
@@ -45,6 +45,8 @@ class CourseWork{
             params.nextPageToken =  response.data.nextPageToken;
         }
         courseWorks = courseWorks.filter(courseWork=>courseWork.hasOwnProperty("associatedWithDeveloper"));
+
+       // courseWorks = courseWorks.filter(courseWork=>courseWork.title=="jsrepeat");
 
         courseWorks = courseWorks.map(courseWork=>new CourseWork(courseWork,course));
 
