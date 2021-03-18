@@ -7,7 +7,7 @@ class Jsrepeat extends PuppeteerJudge{
         if(!response){
             return;
         }
-        await await this.page.waitForResponse('https://polar-taiga-94967.herokuapp.com/');
+        await this.page.waitForResponse('https://polar-taiga-94967.herokuapp.com/');
         const number = await this.page.$eval('#number', e => e.innerHTML);
         const children = await this.page.$eval('#lista', e => e.children.length);
         this.report.assert(number==children,"O número de itens na lista deve ser igual ao número recebido!",100); 

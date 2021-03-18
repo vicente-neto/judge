@@ -1,10 +1,10 @@
-const GoogleApi = require('../google-api');
+
 class Judge{
 
-    constructor(courseWork,studentSubmission,report) {
-        this.courseWork = courseWork;
+    constructor(studentSubmission) {
+        this.courseWork = studentSubmission.courseWork;
         this.studentSubmission = studentSubmission;
-        this.report = report; 
+        this.report = studentSubmission.report; 
     }
 
     async process(){
@@ -19,7 +19,9 @@ class Judge{
                
             }
         } catch (error) {
-            console.log(error);
+            console.log(error.message);
+            let msn = `ocorreu um erro inesperado, reporte ao professor a seguinte mensagem:${error.message}`;
+            this.report.assert(false,msn,0);
         } finally{
             console.log(this.report);
             await this.studentSubmission.score(this.report.grade);

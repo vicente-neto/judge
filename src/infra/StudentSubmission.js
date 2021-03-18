@@ -2,11 +2,12 @@ const JudgeFactory = require("./judge/JudgeFactory");
 const Report = require("./Report");
 
 class StudentSubmission{
-    constructor(fields,courseWork){
+    constructor(fields,courseWork,report){
         this.fields =  fields;
         this.courseWork =  courseWork;
         this.service = this.courseWork.service;
         this.attachments = this.loadAttachments();
+        this.report = report;
     }
 
     loadAttachments(){
@@ -31,9 +32,8 @@ class StudentSubmission{
     }
     
     async process(){
-        let judge = JudgeFactory.getJudge(this.courseWork,this);
+        let judge =  JudgeFactory.getJudge(this);
         console.log("julgando studentSubmission de "+this.fields.userId);
-       // console.log(this.fields);
         await judge.process();
     }
 

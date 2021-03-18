@@ -7,6 +7,6 @@ consign()
 .include('src/routers')
 .into(app);
 
-app.listen();
-//app.run();
+//app.listen();
+app.run();
 
