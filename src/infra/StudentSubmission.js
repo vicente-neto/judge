@@ -64,7 +64,7 @@ class StudentSubmission{
         }
 
         return studentSubmissions
-            //.filter(studentSubmission=>studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory'))
+            .filter(studentSubmission=>studentSubmission.submissionHistory.pop().hasOwnProperty('stateHistory'))
             .map(fields=>new StudentSubmission(fields,courseWork,new Report()));
     } 
 

@@ -5,7 +5,7 @@ class JudgeAssignment extends Judge{
         if(!await super.prepare()){
             return false;
         }
-        this.report.assert(this.courseWork.isAssignment(),"Sem anexo!",0);
+        this.report.assert(this.courseWork.isAssignment(),"A atividade precisa de um anexo como resposta!",0);
         return this.courseWork.isAssignment();
     }    
 }

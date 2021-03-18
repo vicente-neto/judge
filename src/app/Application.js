@@ -11,7 +11,7 @@ class Application{
         console.log("running application...");
     }
     listen(){
-        cron.schedule('* * * * *', () => {  this.run(); });
+        cron.schedule('5 * * * *', () => {  this.run(); });
     }
 
 }

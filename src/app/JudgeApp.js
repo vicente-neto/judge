@@ -15,7 +15,7 @@ class JudgeApp extends Application{
     }
     async run(params={}){
         let service = google.classroom({version: "v1",auth:oauth2});
-        let courses = await Course.findAll(service,"vicnet@gmail.com","helper.classroom@gmail.com");
+        let courses = await Course.findAll(service,null,"helper.classroom@gmail.com");
         for(const course of courses){
             console.log("processando "+course.fields.name);
             await course.process();
