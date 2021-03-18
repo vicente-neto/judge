@@ -1,4 +1,3 @@
-const GoogleApi = require("./google-api");
 const JudgeFactory = require("./judge/JudgeFactory");
 const Report = require("./Report");
 
@@ -52,7 +51,7 @@ class StudentSubmission{
         let studentSubmissions = [];
         let response;
         while(
-            response = await GoogleApi.getclassroom().courses.courseWork.studentSubmissions.list(params).catch((rej)=>false)
+            response = await courseWork.service.courses.courseWork.studentSubmissions.list(params).catch((rej)=>false)
         ){
             
             if("studentSubmissions" in response.data){
