@@ -20,7 +20,7 @@ class Judge{
             }
         } catch (error) {
             console.log(error.message);
-            let msn = `ocorreu um erro inesperado, reporte ao professor a seguinte mensagem:${error.message}`;
+            let msn = `ocorreu um erro inesperado:${error.message}`;
             this.report.assert(false,msn,0);
         } finally{
             console.log(this.report);

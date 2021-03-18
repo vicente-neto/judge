@@ -6,8 +6,9 @@ class JudgeLink extends JudgeAssignment{
         if(!await super.prepare()){
             return false;
         }
-        
+       
         this.url = this.studentSubmission.getAttachment(0,"link","url");    
+        this.report.assert(this.url!==null,"O anexo deve ser uma url!",0);
         return  this.url!==null;
     }
 }

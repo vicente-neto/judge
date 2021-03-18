@@ -8,12 +8,13 @@ class PuppeteerJudge extends JudgeLink{
             return false;
         }
         this.browser = await puppeteer.launch().catch((e)=>null);
-        
         if(!this.browser){
+            this.report.assert(false,"problema na simulação de navegação!Reporte ao professor!",0);
             return false;
         }
         this.page = await this.browser.pages().then((pages)=>pages[0]).catch((e)=>null);
-        if(!this.page){    
+        if(!this.page){   
+            this.report.assert(false,"problema ao carregar a página!Reporte ao professor!",0); 
             return false;
         }
         await this.page.setDefaultTimeout(5000); 
@@ -21,9 +22,9 @@ class PuppeteerJudge extends JudgeLink{
     }
     async close(){
         await super.close();
-        await this.browser.close();
-        
-       
+        if(this.browser){
+            await this.browser.close();
+        }
     }
 }
 
